@@ -1,3 +1,11 @@
+DROP TABLE IF EXISTS fact_nav;
+DROP TABLE IF EXISTS fact_transactions;
+DROP TABLE IF EXISTS fact_performance;
+DROP TABLE IF EXISTS fact_aum;
+DROP TABLE IF EXISTS sip_inflows;
+DROP TABLE IF EXISTS dim_date;
+DROP TABLE IF EXISTS dim_fund;
+
 CREATE TABLE dim_fund(
     amfi_code TEXT PRIMARY KEY,
     fund_house TEXT,

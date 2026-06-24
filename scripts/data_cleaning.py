@@ -1,9 +1,11 @@
 import pandas as pd
 import os
+from pathlib import Path
 
 def clean_data():
-    raw_dir = "data/raw"
-    processed_dir = "data/processed"
+    project_root = Path(__file__).resolve().parent.parent
+    raw_dir = project_root / "data" / "raw"
+    processed_dir = project_root / "data" / "processed"
     os.makedirs(processed_dir, exist_ok=True)
     
     print("Cleaning nav_history...")
