@@ -1,12 +1,12 @@
 # 📊 Bluestock Mutual Fund Analytics Platform
 
-> **Capstone Project — Day-1 Deliverables**
+> **Capstone Project — Day-2 Deliverables**
 > A production-grade data engineering pipeline for Indian mutual fund analytics, built with Python, pandas, and real-time MFAPI integration.
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-2.0+-green?logo=pandas)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-![Status](https://img.shields.io/badge/Status-Day%201%20Complete-brightgreen)
+![Status](https://img.shields.io/badge/Status-Day%202%20Complete-brightgreen)
 
 ---
 
@@ -193,6 +193,20 @@ pytest tests/ -v
 
 ---
 
+## 📋 Day-2 Outputs
+
+| Deliverable | Status | Location |
+|-------------|--------|----------|
+| data_cleaning.py | ✅ | `scripts/data_cleaning.py` |
+| load_to_sqlite.py | ✅ | `scripts/load_to_sqlite.py` |
+| SQLite database | ✅ | `bluestock_mf.db` |
+| SQL schema | ✅ | `sql/schema.sql` |
+| SQL queries | ✅ | `sql/queries.sql` |
+| Data dictionary | ✅ | `data_dictionary.md` |
+| 10 Cleaned CSVs | ✅ | `data/processed/` |
+
+---
+
 ## 🔧 Configuration
 
 ### Environment Variables (Optional)
@@ -214,10 +228,10 @@ Logs are written to `logs/` directory:
 ## 🛣️ Roadmap
 
 ### Day 2 — Data Cleaning & Transformation
-- [ ] Handle missing values & outliers
-- [ ] Normalize date formats
-- [ ] Create derived features (returns, volatility)
-- [ ] Build SQLite/PostgreSQL schema
+- [x] Handle missing values & outliers
+- [x] Normalize date formats
+- [x] Create derived features (returns, volatility)
+- [x] Build SQLite/PostgreSQL schema
 
 ### Day 3 — Exploratory Data Analysis
 - [ ] NAV trend analysis
