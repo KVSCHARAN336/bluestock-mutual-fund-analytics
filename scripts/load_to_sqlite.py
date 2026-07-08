@@ -5,7 +5,7 @@ from pathlib import Path
 
 def load_data():
     project_root = Path(__file__).resolve().parent.parent
-    db_path = project_root / "bluestock_mf.db"
+    db_path = project_root / "data" / "db" / "bluestock_mf.db"
     engine = create_engine(f"sqlite:///{db_path}")
 
     # First, apply the schema.sql to create the tables properly
