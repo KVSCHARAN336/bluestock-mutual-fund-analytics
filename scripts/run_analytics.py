@@ -24,7 +24,9 @@ plt.rcParams.update({
     'axes.labelsize': 12,
 })
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, os.pardir))
+RAW_DIR = os.path.join(ROOT, 'data', 'raw')
 os.makedirs(os.path.join(ROOT, 'reports', 'charts'), exist_ok=True)
 
 print("=" * 70)
@@ -35,11 +37,11 @@ print("=" * 70)
 # 1. Load Data
 # ======================================================================
 print("\n[1/7] Loading data...")
-fund_master  = pd.read_csv(os.path.join(ROOT, '01_fund_master.csv'))
-nav_df       = pd.read_csv(os.path.join(ROOT, '02_nav_history.csv'))
-perf_df      = pd.read_csv(os.path.join(ROOT, '07_scheme_performance.csv'))
-tx_df        = pd.read_csv(os.path.join(ROOT, '08_investor_transactions.csv'))
-holdings_df  = pd.read_csv(os.path.join(ROOT, '09_portfolio_holdings - 09_portfolio_holdings.csv'))
+fund_master  = pd.read_csv(os.path.join(RAW_DIR, '01_fund_master.csv'))
+nav_df       = pd.read_csv(os.path.join(RAW_DIR, '02_nav_history.csv'))
+perf_df      = pd.read_csv(os.path.join(RAW_DIR, '07_scheme_performance.csv'))
+tx_df        = pd.read_csv(os.path.join(RAW_DIR, '08_investor_transactions.csv'))
+holdings_df  = pd.read_csv(os.path.join(RAW_DIR, '09_portfolio_holdings - 09_portfolio_holdings.csv'))
 
 nav_df['date'] = pd.to_datetime(nav_df['date'])
 tx_df['transaction_date'] = pd.to_datetime(tx_df['transaction_date'])

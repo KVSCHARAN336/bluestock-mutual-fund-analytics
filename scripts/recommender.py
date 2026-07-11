@@ -20,7 +20,8 @@ import pandas as pd
 # Configuration
 # ---------------------------------------------------------------------------
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PERFORMANCE_CSV = os.path.join(SCRIPT_DIR, "07_scheme_performance.csv")
+PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, os.pardir))
+PERFORMANCE_CSV = os.path.join(PROJECT_ROOT, "data", "raw", "07_scheme_performance.csv")
 
 RISK_MAP = {
     "Low":      ["Low"],
