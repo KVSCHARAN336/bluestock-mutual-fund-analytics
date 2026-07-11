@@ -1,27 +1,19 @@
 # 📊 Bluestock Mutual Fund Analytics Platform
 
-> **Capstone Project — Day-2 Deliverables**
-> A production-grade data engineering pipeline for Indian mutual fund analytics, built with Python, pandas, and real-time MFAPI integration.
+> **Capstone Project — Full Deliverables Summary**  
+> A production-grade end-to-end data engineering and advanced analytics pipeline for Indian mutual fund analytics.
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-2.0+-green?logo=pandas)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.25+-red?logo=streamlit)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-![Status](https://img.shields.io/badge/Status-Day%202%20Complete-brightgreen)
+![Status](https://img.shields.io/badge/Status-Project%20Complete-brightgreen)
 
 ---
 
 ## 🎯 Project Overview
 
-The **Bluestock Mutual Fund Analytics Platform** is a comprehensive data engineering and analytics solution that ingests, validates, and analyzes mutual fund data from the Indian market. It covers **10 fund houses**, **40+ schemes**, and provides real-time NAV tracking via the MFAPI.
-
-### Key Capabilities
-
-- **Data Ingestion** — Automated loading & profiling of 10 CSV datasets
-- **Data Quality Validation** — Missing values, duplicates, invalid codes, risk category checks
-- **AMFI Code Cross-Validation** — Ensures scheme consistency across datasets
-- **Live NAV Integration** — Real-time NAV fetching from [MFAPI](https://api.mfapi.in)
-- **Structured Reporting** — Auto-generated Markdown quality & validation reports
-- **Production Logging** — Structured logging with file + console output
+The **Bluestock Mutual Fund Analytics Platform** is a comprehensive solution that ingests, validates, cleans, and analyzes mutual fund data from the Indian market. The project tracks **10 fund houses**, **40 schemes**, and provides real-time NAV tracking, portfolio optimization, and risk metrics forecasting.
 
 ---
 
@@ -30,249 +22,123 @@ The **Bluestock Mutual Fund Analytics Platform** is a comprehensive data enginee
 ```
 bluestock_mf_capstone/
 ├── data/
-│   ├── raw/                        # Raw CSV data & live NAV downloads
-│   │   └── live_nav/               # Per-scheme live NAV CSVs
-│   └── processed/                  # Cleaned & transformed datasets
-├── notebooks/                      # Jupyter analysis notebooks
-├── sql/                            # SQL scripts & schema definitions
-├── dashboard/                      # Dashboard assets (Plotly/Streamlit)
-├── reports/                        # Generated reports
-│   ├── day1_data_quality_report.md # Comprehensive data quality report
-│   └── amfi_validation_report.md   # AMFI code cross-validation report
+│   ├── raw/                        # Original CSV datasets
+│   │   └── live_nav/               # Per-scheme live NAV downloads
+│   ├── processed/                  # Cleaned & transformed datasets
+│   └── db/
+│       └── bluestock_mf.db         # SQLite Database
+├── notebooks/                      # Standardized Jupyter notebooks
+│   ├── 01_data_ingestion.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_eda_analysis.ipynb
+│   ├── 04_performance_analytics.ipynb
+│   └── 05_advanced_analytics.ipynb # Includes Monte Carlo & Portfolio Opt
+├── sql/
+│   ├── schema.sql                  # Idempotent DB schema
+│   └── queries.sql                 # SQL analytics queries
+├── dashboard/
+│   └── streamlit_app.py            # Streamlit Interactive Dashboard
+├── reports/                        # PDF & Markdown deliverables
+│   ├── Final_Report.md             # Complete Capstone Final Report
+│   ├── Dashboard.pdf               # Static export of dashboard layouts
+│   ├── fund_scorecard.csv          # Risk-return stats (CAGR, Sharpe, MaxDD)
+│   ├── alpha_beta.csv              # Beta coefficients vs benchmark
+│   ├── var_cvar_report.csv         # Scheme-level tail risk metrics
+│   ├── weekly_performance_summary.html # Generated HTML report (Bonus B5)
+│   └── charts/                     # Generated charts & plots
 ├── scripts/
-│   ├── data_ingestion.py           # Main ingestion pipeline
-│   └── live_nav_fetch.py           # MFAPI live NAV fetcher
+│   ├── etl_pipeline.py             # End-to-end ETL script
+│   ├── compute_metrics.py          # Metrics calculation script
+│   ├── recommender.py              # CLI fund recommender
+│   ├── live_nav_fetch.py           # MFAPI live NAV fetcher
+│   ├── run_analytics.py            # Advanced analytics runner
+│   ├── monte_carlo.py              # B3: Monte Carlo projection
+│   └── portfolio_optimization.py   # B4: Portfolio optimization
 ├── tests/
-│   ├── __init__.py
 │   └── test_data_ingestion.py      # Unit tests
-├── logs/                           # Runtime logs (auto-created)
-├── README.md                       # This file
+├── logs/                           # Automated runtime logs
 ├── requirements.txt                # Python dependencies
-├── pyproject.toml                  # Project metadata & tool config
-└── .gitignore                      # Git ignore rules
+└── README.md                       # This file
 ```
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Start & Usage
 
-### Prerequisites
-
-- Python 3.9 or higher
-- pip (package manager)
-- Git
-
-### 1. Clone the Repository
-
+### 1. Set Up Environment
+Create and activate a virtual environment, then install requirements:
 ```bash
-git clone https://github.com/<your-username>/bluestock-mutual-fund-analytics.git
-cd bluestock-mutual-fund-analytics
-```
+python -m venv .venv
+# On Windows:
+.venv\Scripts\activate
+# On Unix:
+source .venv/bin/activate
 
-### 2. Create Virtual Environment
-
-```bash
-python -m venv venv
-
-# Windows
-venv\Scripts\activate
-
-# macOS / Linux
-source venv/bin/activate
-```
-
-### 3. Install Dependencies
-
-```bash
 pip install -r requirements.txt
 ```
 
-### 4. Place Data Files
-
-Ensure the 10 CSV source files are in the **parent directory** of the project:
-
-```
-BLUE STOCKS/                        # Parent directory
-├── 01_fund_master.csv
-├── 02_nav_history.csv
-├── 03_aum_by_fund_house.csv
-├── 04_monthly_sip_inflows.csv
-├── 05_category_inflows.csv
-├── 06_industry_folio_count.csv
-├── 07_scheme_performance.csv
-├── 08_investor_transactions.csv
-├── 09_portfolio_holdings - 09_portfolio_holdings.csv
-├── 10_benchmark_indices - 10_benchmark_indices.csv
-└── bluestock_mf_capstone/          # This project
-```
-
-### 5. Run Data Ingestion
-
+### 2. Run the ETL Pipeline (D1 & D2)
+Ingests raw data, cleans it, and loads the SQLite database:
 ```bash
-python scripts/data_ingestion.py
+python scripts/etl_pipeline.py
 ```
 
-This will:
-- Load & profile all 10 datasets
-- Run data quality validations
-- Cross-validate AMFI codes
-- Generate reports in `reports/`
-- Copy raw data to `data/raw/`
-
-### 6. Fetch Live NAV Data
-
+### 3. Compute Risk-Return Metrics (D4)
+Computes Sharpe, Sortino, Alpha, Beta, Max Drawdown, and VaR:
 ```bash
-python scripts/live_nav_fetch.py
+python scripts/compute_metrics.py
 ```
 
-This will:
-- Fetch live NAV for HDFC Top 100 Direct (125497)
-- Fetch NAV history for 5 additional schemes
-- Save CSVs to `data/raw/` and `data/raw/live_nav/`
-
-### 7. Run Tests
-
+### 4. Run CLI Fund Recommender (D6)
+Retrieve top 3 funds matching a specified risk appetite (Low / Moderate / High):
 ```bash
-pip install pytest
-pytest tests/ -v
+python scripts/recommender.py --risk High
 ```
 
----
+### 5. Launch the Interactive Dashboard (D5 & Bonus B2)
+Launches the 4-page interactive Streamlit dashboard:
+```bash
+streamlit run dashboard/streamlit_app.py
+```
 
-## 📊 Data Sources
-
-### Static Datasets (10 CSVs)
-
-| # | Dataset | Description | Rows | Cols |
-|---|---------|-------------|------|------|
-| 01 | Fund Master | Scheme metadata & attributes | 41 | 15 |
-| 02 | NAV History | Historical NAV (2022-2025) | ~46,000 | 3 |
-| 03 | AUM by Fund House | AUM over time by AMC | 91 | 5 |
-| 04 | Monthly SIP Inflows | SIP trends (2022-2025) | 49 | 6 |
-| 05 | Category Inflows | Net inflows by category | 145 | 3 |
-| 06 | Industry Folio Count | Folio growth by segment | 22 | 6 |
-| 07 | Scheme Performance | Returns, risk metrics | 41 | 19 |
-| 08 | Investor Transactions | Individual transactions | ~32,700 | 13 |
-| 09 | Portfolio Holdings | Top holdings per scheme | 322 | 8 |
-| 10 | Benchmark Indices | NIFTY/BSE daily indices | ~8,050 | 3 |
-
-### Live API
-
-| Source | Endpoint | Usage |
-|--------|----------|-------|
-| MFAPI | `https://api.mfapi.in/mf/{code}` | Real-time & historical NAV |
-
-### Schemes Tracked
-
-| AMFI Code | Scheme | Fund House |
-|-----------|--------|------------|
-| 125497 | HDFC Top 100 Direct | HDFC Mutual Fund |
-| 119551 | SBI Bluechip | SBI Mutual Fund |
-| 120503 | ICICI Bluechip | ICICI Prudential MF |
-| 118632 | Nippon Large Cap | Nippon India MF |
-| 119092 | Axis Bluechip | Axis Mutual Fund |
-| 120841 | Kotak Bluechip | Kotak Mahindra MF |
+### 6. Run Bonus Simulations (Bonus B3, B4 & B5)
+- **Monte Carlo NAV Projection (B3):**
+  ```bash
+  python scripts/monte_carlo.py
+  ```
+- **Portfolio Optimization (B4):**
+  ```bash
+  python scripts/portfolio_optimization.py
+  ```
+- **HTML Weekly Performance Report (B5):**
+  ```bash
+  python scripts/email_report_generator.py
+  ```
 
 ---
 
-## 📋 Day-1 Outputs
+## 🏆 Completed Deliverables Scorecard
 
-| Deliverable | Status | Location |
-|-------------|--------|----------|
-| Project structure | ✅ | Root directory |
-| requirements.txt | ✅ | `requirements.txt` |
-| pyproject.toml | ✅ | `pyproject.toml` |
-| .gitignore | ✅ | `.gitignore` |
-| data_ingestion.py | ✅ | `scripts/data_ingestion.py` |
-| live_nav_fetch.py | ✅ | `scripts/live_nav_fetch.py` |
-| Data quality report | ✅ | `reports/day1_data_quality_report.md` |
-| AMFI validation report | ✅ | `reports/amfi_validation_report.md` |
-| Unit tests | ✅ | `tests/test_data_ingestion.py` |
-| README.md | ✅ | `README.md` |
-| Git repository | ✅ | Initialized with initial commit |
+| ID | Weight | Deliverable | Location / Script |
+|----|--------|-------------|-------------------|
+| **D1** | 15% | ETL Pipeline | `scripts/etl_pipeline.py` |
+| **D2** | 10% | SQLite Database | `data/db/bluestock_mf.db` |
+| **D3** | 15% | EDA Notebook | `notebooks/03_eda_analysis.ipynb` |
+| **D4** | 15% | Performance Metrics | `notebooks/04_performance_analytics.ipynb`, `scripts/compute_metrics.py` |
+| **D5** | 20% | Interactive Dashboard | `dashboard/streamlit_app.py` / `reports/Dashboard.pdf` |
+| **D6** | 10% | Advanced Analytics | `notebooks/05_advanced_analytics.ipynb`, `scripts/recommender.py` |
+| **D7** | 15% | Final Report | `reports/Final_Report.md` |
 
----
-
-## 📋 Day-2 Outputs
-
-| Deliverable | Status | Location |
-|-------------|--------|----------|
-| data_cleaning.py | ✅ | `scripts/data_cleaning.py` |
-| load_to_sqlite.py | ✅ | `scripts/load_to_sqlite.py` |
-| SQLite database | ✅ | `bluestock_mf.db` |
-| SQL schema | ✅ | `sql/schema.sql` |
-| SQL queries | ✅ | `sql/queries.sql` |
-| Data dictionary | ✅ | `data_dictionary.md` |
-| 10 Cleaned CSVs | ✅ | `data/processed/` |
-
----
-
-## 🔧 Configuration
-
-### Environment Variables (Optional)
-
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `MFAPI_TIMEOUT` | `30` | API request timeout (seconds) |
-| `MFAPI_MAX_RETRIES` | `3` | Max retry attempts |
-| `MFAPI_RATE_LIMIT` | `1.0` | Delay between API calls (seconds) |
-
-### Logging
-
-Logs are written to `logs/` directory:
-- `data_ingestion.log` — Ingestion pipeline logs
-- `live_nav_fetch.log` — NAV fetch logs
-
----
-
-## 🛣️ Roadmap
-
-### Day 2 — Data Cleaning & Transformation
-- [x] Handle missing values & outliers
-- [x] Normalize date formats
-- [x] Create derived features (returns, volatility)
-- [x] Build SQLite/PostgreSQL schema
-
-### Day 3 — Exploratory Data Analysis
-- [ ] NAV trend analysis
-- [ ] AUM growth visualization
-- [ ] SIP inflow patterns
-- [ ] Category performance comparison
-
-### Day 4 — Advanced Analytics
-- [ ] Risk-adjusted return metrics
-- [ ] Portfolio optimization
-- [ ] Investor behavior segmentation
-- [ ] Benchmark comparison
-
-### Day 5 — Dashboard & Deployment
-- [ ] Interactive Plotly/Streamlit dashboard
-- [ ] Automated data refresh pipeline
-- [ ] CI/CD with GitHub Actions
-- [ ] Documentation & presentation
-
----
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
+### 🌟 Bonus Challenges Completed (+40 Marks Total)
+- **B2 (+10)**: Build a Streamlit web app alternative to Power BI (`dashboard/streamlit_app.py`)
+- **B3 (+10)**: 5-Year Monte Carlo NAV simulation with uncertainty bands (`scripts/monte_carlo.py` & integrated in Notebook 5)
+- **B4 (+10)**: Markowitz Efficient Frontier portfolio optimization (`scripts/portfolio_optimization.py` & integrated in Notebook 5)
+- **B5 (+10)**: Weekly HTML email report generator (`scripts/email_report_generator.py` & saved to `reports/weekly_performance_summary.html`)
 
 ---
 
 ## 👥 Team
 
 **Bluestock Fintech Analytics Team**
-
----
 
 *Built with ❤️ for the Indian Mutual Fund ecosystem*

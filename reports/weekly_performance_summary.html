@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BlueStock MF Weekly Analytics Summary</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0B1120;
+            color: #E2E8F0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background-color: #131B2E;
+            border-radius: 12px;
+            border: 1px solid #1E293B;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+        .header {
+            background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+            color: #FFFFFF;
+            letter-spacing: 0.5px;
+        }
+        .header p {
+            margin: 8px 0 0 0;
+            font-size: 14px;
+            color: #93C5FD;
+        }
+        .content {
+            padding: 30px;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #3B82F6;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #1E293B;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+        }
+        th {
+            text-align: left;
+            padding: 10px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #94A3B8;
+            border-bottom: 1px solid #1E293B;
+            text-transform: uppercase;
+        }
+        td {
+            padding: 12px 10px;
+            font-size: 13px;
+            color: #E2E8F0;
+            border-bottom: 1px solid #1E293B;
+        }
+        tr:hover td {
+            background-color: #1E293B;
+        }
+        .badge {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .badge-positive {
+            background-color: rgba(16, 185, 129, 0.15);
+            color: #10B981;
+        }
+        .badge-negative {
+            background-color: rgba(239, 68, 68, 0.15);
+            color: #EF4444;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        .card {
+            background-color: #1E293B;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        .card-value {
+            font-size: 20px;
+            font-weight: 700;
+            color: #10B981;
+            margin-bottom: 5px;
+        }
+        .card-label {
+            font-size: 12px;
+            color: #94A3B8;
+            text-transform: uppercase;
+        }
+        .footer {
+            background-color: #0F172A;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #1E293B;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 11px;
+            color: #64748B;
+        }
+        .footer a {
+            color: #3B82F6;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>BLUESTOCK MUTUAL FUND ANALYTICS</h1>
+            <p>Weekly Market & Performance Summary &bull; July 11, 2026</p>
+        </div>
+        
+        <div class="content">
+            <div class="section-title">🏆 Top 5 Schemes by Sharpe Ratio</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Scheme</th>
+                        <th>Category</th>
+                        <th>Sharpe</th>
+                        <th>1-Yr Return</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><strong>ICICI Pru Liquid Fund - Regular - G...</strong></td>
+                        <td>Debt</td>
+                        <td><span class="badge badge-positive">7.68</span></td>
+                        <td>8.89%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kotak Liquid Fund - Regular - Growth</strong></td>
+                        <td>Debt</td>
+                        <td><span class="badge badge-positive">6.18</span></td>
+                        <td>4.26%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ABSL Liquid Fund - Regular - Growth</strong></td>
+                        <td>Debt</td>
+                        <td><span class="badge badge-positive">5.14</span></td>
+                        <td>6.18%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>HDFC Short Term Debt Fund - Regular...</strong></td>
+                        <td>Debt</td>
+                        <td><span class="badge badge-positive">1.84</span></td>
+                        <td>6.83%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SBI Magnum Gilt Fund - Regular Plan...</strong></td>
+                        <td>Debt</td>
+                        <td><span class="badge badge-positive">1.52</span></td>
+                        <td>5.34%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="section-title">📊 Asset/Risk Category Benchmarks</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Risk Tier</th>
+                        <th>Avg 1-Yr Return</th>
+                        <th>Avg Sharpe</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><strong>Very High</strong></td>
+                        <td>22.26%</td>
+                        <td>0.87</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Moderately High</strong></td>
+                        <td>16.19%</td>
+                        <td>0.96</td>
+                    </tr>
+                    <tr>
+                        <td><strong>High</strong></td>
+                        <td>15.38%</td>
+                        <td>0.86</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Moderate</strong></td>
+                        <td>13.50%</td>
+                        <td>0.93</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Low</strong></td>
+                        <td>6.28%</td>
+                        <td>3.95</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="section-title">🏛️ Top AMC AUM Rankings</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fund House (AMC)</th>
+                        <th>Latest AUM (₹ Crore)</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>SBI Mutual Fund</td>
+                        <td><strong>₹1,250,000.00 Cr</strong></td>
+                    </tr>
+                    <tr>
+                        <td>ICICI Prudential MF</td>
+                        <td><strong>₹1,074,000.00 Cr</strong></td>
+                    </tr>
+                    <tr>
+                        <td>HDFC Mutual Fund</td>
+                        <td><strong>₹930,000.00 Cr</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Nippon India MF</td>
+                        <td><strong>₹700,000.00 Cr</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Kotak Mahindra MF</td>
+                        <td><strong>₹580,000.00 Cr</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="footer">
+            <p>This is an automated report generated by the BlueStock MF Analytics Pipeline.</p>
+            <p>Configure subscription settings in your <a href="http://localhost:8501">Dashboard</a></p>
+            <p style="margin-top: 10px;">&copy; 2026 BlueStock Fintech. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
