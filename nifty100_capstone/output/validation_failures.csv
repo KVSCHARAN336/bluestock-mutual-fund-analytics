@@ -1,1 +1,904 @@
 table_name,rule_id,severity,company_id,year,column_name,value,message
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2013-03,"company_id,year","ADANIPORTS,2013-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2014-03,"company_id,year","ADANIPORTS,2014-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2015-03,"company_id,year","ADANIPORTS,2015-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2016-03,"company_id,year","ADANIPORTS,2016-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2017-03,"company_id,year","ADANIPORTS,2017-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2018-03,"company_id,year","ADANIPORTS,2018-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2019-03,"company_id,year","ADANIPORTS,2019-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2020-03,"company_id,year","ADANIPORTS,2020-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2021-03,"company_id,year","ADANIPORTS,2021-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2022-03,"company_id,year","ADANIPORTS,2022-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2023-03,"company_id,year","ADANIPORTS,2023-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2024-03,"company_id,year","ADANIPORTS,2024-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,TTM,"company_id,year","ADANIPORTS,TTM",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2013-03,"company_id,year","ADANIPORTS,2013-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2014-03,"company_id,year","ADANIPORTS,2014-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2015-03,"company_id,year","ADANIPORTS,2015-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2016-03,"company_id,year","ADANIPORTS,2016-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2017-03,"company_id,year","ADANIPORTS,2017-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2018-03,"company_id,year","ADANIPORTS,2018-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2019-03,"company_id,year","ADANIPORTS,2019-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2020-03,"company_id,year","ADANIPORTS,2020-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2021-03,"company_id,year","ADANIPORTS,2021-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2022-03,"company_id,year","ADANIPORTS,2022-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2023-03,"company_id,year","ADANIPORTS,2023-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,2024-03,"company_id,year","ADANIPORTS,2024-03",Duplicate composite primary key
+profitandloss,DQ-02,CRITICAL,ADANIPORTS,TTM,"company_id,year","ADANIPORTS,TTM",Duplicate composite primary key
+profitandloss,DQ-06,WARNING,ADANIENSOL,2014-03,sales,0,"Sales should be positive, found: 0"
+profitandloss,DQ-08,WARNING,ADANIENT,2014-03,tax_percentage,-64.0,Effective tax rate out of bounds: -64.0%
+profitandloss,DQ-08,WARNING,ADANIGREEN,2017-03,tax_percentage,-75.0,Effective tax rate out of bounds: -75.0%
+profitandloss,DQ-08,WARNING,ADANIGREEN,2018-03,tax_percentage,-35.0,Effective tax rate out of bounds: -35.0%
+profitandloss,DQ-08,WARNING,ADANIGREEN,2019-03,tax_percentage,-19.0,Effective tax rate out of bounds: -19.0%
+profitandloss,DQ-08,WARNING,ADANIPOWER,2014-03,tax_percentage,-79.0,Effective tax rate out of bounds: -79.0%
+profitandloss,DQ-08,WARNING,ADANIPOWER,2016-03,tax_percentage,-47.0,Effective tax rate out of bounds: -47.0%
+profitandloss,DQ-08,WARNING,ADANIPOWER,2017-03,tax_percentage,-1.0,Effective tax rate out of bounds: -1.0%
+profitandloss,DQ-08,WARNING,ADANIPOWER,2023-03,tax_percentage,-40.0,Effective tax rate out of bounds: -40.0%
+profitandloss,DQ-08,WARNING,AMBUJACEM,2018-12,tax_percentage,-2.0,Effective tax rate out of bounds: -2.0%
+profitandloss,DQ-05,WARNING,AXISBANK,2013-03,operating_profit,8313.0,"Operating profit mismatch: Sales (27183) - Expenses (17516) = 9667, reported Operating Profit = 8313.0 (diff 16.3%)"
+profitandloss,DQ-05,WARNING,AXISBANK,2014-03,operating_profit,9644.0,"Operating profit mismatch: Sales (30641) - Expenses (18690) = 11951, reported Operating Profit = 9644.0 (diff 23.9%)"
+profitandloss,DQ-05,WARNING,AXISBANK,2015-03,operating_profit,11127.0,"Operating profit mismatch: Sales (35479) - Expenses (21254) = 14225, reported Operating Profit = 11127.0 (diff 27.8%)"
+profitandloss,DQ-05,WARNING,AXISBANK,2016-03,operating_profit,13367.0,"Operating profit mismatch: Sales (40988) - Expenses (24155) = 16833, reported Operating Profit = 13367.0 (diff 25.9%)"
+profitandloss,DQ-05,WARNING,AXISBANK,2017-03,operating_profit,23808.0,"Operating profit mismatch: Sales (44542) - Expenses (26449) = 18093, reported Operating Profit = 23808.0 (diff 24.0%)"
+profitandloss,DQ-05,WARNING,AXISBANK,2018-03,operating_profit,28895.0,"Operating profit mismatch: Sales (45780) - Expenses (27163) = 18617, reported Operating Profit = 28895.0 (diff 35.6%)"
+profitandloss,DQ-08,WARNING,AXISBANK,2018-03,tax_percentage,-99.0,Effective tax rate out of bounds: -99.0%
+profitandloss,DQ-05,WARNING,AXISBANK,2019-03,operating_profit,27155.0,"Operating profit mismatch: Sales (54986) - Expenses (33278) = 21708, reported Operating Profit = 27155.0 (diff 20.1%)"
+profitandloss,DQ-05,WARNING,AXISBANK,2020-03,operating_profit,35066.0,"Operating profit mismatch: Sales (62635) - Expenses (37429) = 25206, reported Operating Profit = 35066.0 (diff 28.1%)"
+profitandloss,DQ-05,WARNING,AXISBANK,2021-03,operating_profit,31749.0,"Operating profit mismatch: Sales (63346) - Expenses (34107) = 29239, reported Operating Profit = 31749.0 (diff 7.9%)"
+profitandloss,DQ-05,WARNING,AXISBANK,2022-03,operating_profit,29962.0,"Operating profit mismatch: Sales (67377) - Expenses (34245) = 33132, reported Operating Profit = 29962.0 (diff 10.6%)"
+profitandloss,DQ-05,WARNING,AXISBANK,2023-03,operating_profit,29089.0,"Operating profit mismatch: Sales (85164) - Expenses (42218) = 42946, reported Operating Profit = 29089.0 (diff 47.6%)"
+profitandloss,DQ-05,WARNING,AXISBANK,2024-03,operating_profit,37943.0,"Operating profit mismatch: Sales (109369) - Expenses (59474) = 49895, reported Operating Profit = 37943.0 (diff 31.5%)"
+profitandloss,DQ-05,WARNING,AXISBANK,TTM,operating_profit,44566.0,"Operating profit mismatch: Sales (120659) - Expenses (67033) = 53626, reported Operating Profit = 44566.0 (diff 20.3%)"
+profitandloss,DQ-05,WARNING,BAJFINANCE,2015-03,operating_profit,1752.0,"Operating profit mismatch: Sales (5392) - Expenses (2274) = 3118, reported Operating Profit = 1752.0 (diff 78.0%)"
+profitandloss,DQ-05,WARNING,BAJFINANCE,2016-03,operating_profit,2354.0,"Operating profit mismatch: Sales (7299) - Expenses (2959) = 4340, reported Operating Profit = 2354.0 (diff 84.4%)"
+profitandloss,DQ-05,WARNING,BAJFINANCE,2017-03,operating_profit,3250.0,"Operating profit mismatch: Sales (9970) - Expenses (3853) = 6117, reported Operating Profit = 3250.0 (diff 88.2%)"
+profitandloss,DQ-05,WARNING,BAJFINANCE,2018-03,operating_profit,4115.0,"Operating profit mismatch: Sales (12746) - Expenses (4696) = 8050, reported Operating Profit = 4115.0 (diff 95.6%)"
+profitandloss,DQ-05,WARNING,BAJFINANCE,2019-03,operating_profit,5454.0,"Operating profit mismatch: Sales (18487) - Expenses (6723) = 11764, reported Operating Profit = 5454.0 (diff 115.7%)"
+profitandloss,DQ-05,WARNING,BAJFINANCE,2020-03,operating_profit,9159.0,"Operating profit mismatch: Sales (26374) - Expenses (9608) = 16766, reported Operating Profit = 9159.0 (diff 83.1%)"
+profitandloss,DQ-05,WARNING,BAJFINANCE,2021-03,operating_profit,10839.0,"Operating profit mismatch: Sales (26673) - Expenses (9519) = 17154, reported Operating Profit = 10839.0 (diff 58.3%)"
+profitandloss,DQ-05,WARNING,BAJFINANCE,2022-03,operating_profit,11880.0,"Operating profit mismatch: Sales (31641) - Expenses (9855) = 21786, reported Operating Profit = 11880.0 (diff 83.4%)"
+profitandloss,DQ-05,WARNING,BAJFINANCE,2023-03,operating_profit,12693.0,"Operating profit mismatch: Sales (41411) - Expenses (12701) = 28710, reported Operating Profit = 12693.0 (diff 126.2%)"
+profitandloss,DQ-05,WARNING,BAJFINANCE,2024-03,operating_profit,16099.0,"Operating profit mismatch: Sales (54972) - Expenses (18886) = 36086, reported Operating Profit = 16099.0 (diff 124.2%)"
+profitandloss,DQ-05,WARNING,BAJFINANCE,TTM,operating_profit,18943.0,"Operating profit mismatch: Sales (62279) - Expenses (21918) = 40361, reported Operating Profit = 18943.0 (diff 113.1%)"
+profitandloss,DQ-05,WARNING,BANKBARODA,2013-03,operating_profit,10950.0,"Operating profit mismatch: Sales (36442) - Expenses (24486) = 11956, reported Operating Profit = 10950.0 (diff 9.2%)"
+profitandloss,DQ-05,WARNING,BANKBARODA,2014-03,operating_profit,12049.0,"Operating profit mismatch: Sales (40463) - Expenses (27604) = 12859, reported Operating Profit = 12049.0 (diff 6.7%)"
+profitandloss,DQ-05,WARNING,BANKBARODA,2015-03,operating_profit,13466.0,"Operating profit mismatch: Sales (44915) - Expenses (30547) = 14368, reported Operating Profit = 13466.0 (diff 6.7%)"
+profitandloss,DQ-05,WARNING,BANKBARODA,2016-03,operating_profit,25391.0,"Operating profit mismatch: Sales (45799) - Expenses (32107) = 13692, reported Operating Profit = 25391.0 (diff 46.1%)"
+profitandloss,DQ-08,WARNING,BANKBARODA,2016-03,tax_percentage,-19.0,Effective tax rate out of bounds: -19.0%
+profitandloss,DQ-05,WARNING,BANKBARODA,2017-03,operating_profit,19250.0,"Operating profit mismatch: Sales (44473) - Expenses (29596) = 14877, reported Operating Profit = 19250.0 (diff 22.7%)"
+profitandloss,DQ-05,WARNING,BANKBARODA,2018-03,operating_profit,26093.0,"Operating profit mismatch: Sales (46056) - Expenses (29160) = 16896, reported Operating Profit = 26093.0 (diff 35.2%)"
+profitandloss,DQ-08,WARNING,BANKBARODA,2018-03,tax_percentage,-9.0,Effective tax rate out of bounds: -9.0%
+profitandloss,DQ-05,WARNING,BANKBARODA,2019-03,operating_profit,25815.0,"Operating profit mismatch: Sales (52906) - Expenses (32506) = 20400, reported Operating Profit = 25815.0 (diff 21.0%)"
+profitandloss,DQ-05,WARNING,BANKBARODA,2020-03,operating_profit,40583.0,"Operating profit mismatch: Sales (78895) - Expenses (50040) = 28855, reported Operating Profit = 40583.0 (diff 28.9%)"
+profitandloss,DQ-08,WARNING,BANKBARODA,2020-03,tax_percentage,-99.0,Effective tax rate out of bounds: -99.0%
+profitandloss,DQ-05,WARNING,BANKBARODA,2021-03,operating_profit,38070.0,"Operating profit mismatch: Sales (74314) - Expenses (43201) = 31113, reported Operating Profit = 38070.0 (diff 18.3%)"
+profitandloss,DQ-05,WARNING,BANKBARODA,2022-03,operating_profit,37518.0,"Operating profit mismatch: Sales (73385) - Expenses (38815) = 34570, reported Operating Profit = 37518.0 (diff 7.9%)"
+profitandloss,DQ-05,WARNING,BANKBARODA,2023-03,operating_profit,38231.0,"Operating profit mismatch: Sales (94503) - Expenses (49942) = 44561, reported Operating Profit = 38231.0 (diff 16.6%)"
+profitandloss,DQ-05,WARNING,BANKBARODA,2024-03,operating_profit,44379.0,"Operating profit mismatch: Sales (118379) - Expenses (69899) = 48480, reported Operating Profit = 44379.0 (diff 9.2%)"
+profitandloss,DQ-05,WARNING,BANKBARODA,TTM,operating_profit,46459.0,"Operating profit mismatch: Sales (124144) - Expenses (74160) = 49984, reported Operating Profit = 46459.0 (diff 7.6%)"
+profitandloss,DQ-08,WARNING,BHARTIARTL,2019-03,tax_percentage,-99.0,Effective tax rate out of bounds: -99.0%
+profitandloss,DQ-08,WARNING,BHARTIARTL,2020-03,tax_percentage,-28.0,Effective tax rate out of bounds: -28.0%
+profitandloss,DQ-08,WARNING,BHEL,2016-03,tax_percentage,-39.0,Effective tax rate out of bounds: -39.0%
+profitandloss,DQ-08,WARNING,BHEL,2021-03,tax_percentage,-25.0,Effective tax rate out of bounds: -25.0%
+profitandloss,DQ-08,WARNING,BHEL,2024-03,tax_percentage,-16.0,Effective tax rate out of bounds: -16.0%
+profitandloss,DQ-05,WARNING,CANBK,2013-03,operating_profit,7217.0,"Operating profit mismatch: Sales (34070) - Expenses (26198) = 7872, reported Operating Profit = 7217.0 (diff 9.1%)"
+profitandloss,DQ-05,WARNING,CANBK,2014-03,operating_profit,9636.0,"Operating profit mismatch: Sales (39570) - Expenses (30606) = 8964, reported Operating Profit = 9636.0 (diff 7.0%)"
+profitandloss,DQ-05,WARNING,CANBK,2015-03,operating_profit,10302.0,"Operating profit mismatch: Sales (43813) - Expenses (34133) = 9680, reported Operating Profit = 10302.0 (diff 6.0%)"
+profitandloss,DQ-05,WARNING,CANBK,2016-03,operating_profit,17785.0,"Operating profit mismatch: Sales (44039) - Expenses (34263) = 9776, reported Operating Profit = 17785.0 (diff 45.0%)"
+profitandloss,DQ-08,WARNING,CANBK,2016-03,tax_percentage,-13.0,Effective tax rate out of bounds: -13.0%
+profitandloss,DQ-05,WARNING,CANBK,2017-03,operating_profit,15691.0,"Operating profit mismatch: Sales (41457) - Expenses (31540) = 9917, reported Operating Profit = 15691.0 (diff 36.8%)"
+profitandloss,DQ-05,WARNING,CANBK,2018-03,operating_profit,25582.0,"Operating profit mismatch: Sales (41345) - Expenses (29113) = 12232, reported Operating Profit = 25582.0 (diff 52.2%)"
+profitandloss,DQ-08,WARNING,CANBK,2018-03,tax_percentage,-36.0,Effective tax rate out of bounds: -36.0%
+profitandloss,DQ-05,WARNING,CANBK,2019-03,operating_profit,27202.0,"Operating profit mismatch: Sales (47951) - Expenses (32339) = 15612, reported Operating Profit = 27202.0 (diff 42.6%)"
+profitandloss,DQ-08,WARNING,CANBK,2019-03,tax_percentage,-99.0,Effective tax rate out of bounds: -99.0%
+profitandloss,DQ-05,WARNING,CANBK,2020-03,operating_profit,26809.0,"Operating profit mismatch: Sales (49759) - Expenses (35817) = 13942, reported Operating Profit = 26809.0 (diff 48.0%)"
+profitandloss,DQ-05,WARNING,CANBK,2021-03,operating_profit,43437.0,"Operating profit mismatch: Sales (70253) - Expenses (45182) = 25071, reported Operating Profit = 43437.0 (diff 42.3%)"
+profitandloss,DQ-05,WARNING,CANBK,2022-03,operating_profit,41235.0,"Operating profit mismatch: Sales (70614) - Expenses (43035) = 27579, reported Operating Profit = 41235.0 (diff 33.1%)"
+profitandloss,DQ-05,WARNING,CANBK,2023-03,operating_profit,42772.0,"Operating profit mismatch: Sales (85885) - Expenses (52990) = 32895, reported Operating Profit = 42772.0 (diff 23.1%)"
+profitandloss,DQ-05,WARNING,CANBK,2024-03,operating_profit,46146.0,"Operating profit mismatch: Sales (110519) - Expenses (72118) = 38401, reported Operating Profit = 46146.0 (diff 16.8%)"
+profitandloss,DQ-05,WARNING,CANBK,TTM,operating_profit,48026.0,"Operating profit mismatch: Sales (119392) - Expenses (80351) = 39041, reported Operating Profit = 48026.0 (diff 18.7%)"
+profitandloss,DQ-05,WARNING,CHOLAFIN,2013-03,operating_profit,688.0,"Operating profit mismatch: Sales (2570) - Expenses (1410) = 1160, reported Operating Profit = 688.0 (diff 68.6%)"
+profitandloss,DQ-05,WARNING,CHOLAFIN,2014-03,operating_profit,932.0,"Operating profit mismatch: Sales (3279) - Expenses (1769) = 1510, reported Operating Profit = 932.0 (diff 62.0%)"
+profitandloss,DQ-05,WARNING,CHOLAFIN,2015-03,operating_profit,1061.0,"Operating profit mismatch: Sales (3715) - Expenses (1958) = 1757, reported Operating Profit = 1061.0 (diff 65.6%)"
+profitandloss,DQ-05,WARNING,CHOLAFIN,2016-03,operating_profit,1266.0,"Operating profit mismatch: Sales (4214) - Expenses (2048) = 2166, reported Operating Profit = 1266.0 (diff 71.1%)"
+profitandloss,DQ-05,WARNING,CHOLAFIN,2017-03,operating_profit,1322.0,"Operating profit mismatch: Sales (4694) - Expenses (2228) = 2466, reported Operating Profit = 1322.0 (diff 86.5%)"
+profitandloss,DQ-05,WARNING,CHOLAFIN,2018-03,operating_profit,1451.0,"Operating profit mismatch: Sales (5559) - Expenses (2657) = 2902, reported Operating Profit = 1451.0 (diff 100.0%)"
+profitandloss,DQ-05,WARNING,CHOLAFIN,2019-03,operating_profit,1632.0,"Operating profit mismatch: Sales (7108) - Expenses (3588) = 3520, reported Operating Profit = 1632.0 (diff 115.7%)"
+profitandloss,DQ-05,WARNING,CHOLAFIN,2020-03,operating_profit,2421.0,"Operating profit mismatch: Sales (8712) - Expenses (4592) = 4120, reported Operating Profit = 2421.0 (diff 70.2%)"
+profitandloss,DQ-05,WARNING,CHOLAFIN,2021-03,operating_profit,2913.0,"Operating profit mismatch: Sales (9583) - Expenses (4576) = 5007, reported Operating Profit = 2913.0 (diff 71.9%)"
+profitandloss,DQ-05,WARNING,CHOLAFIN,2022-03,operating_profit,2926.0,"Operating profit mismatch: Sales (10148) - Expenses (4298) = 5850, reported Operating Profit = 2926.0 (diff 99.9%)"
+profitandloss,DQ-05,WARNING,CHOLAFIN,2023-03,operating_profit,3621.0,"Operating profit mismatch: Sales (12884) - Expenses (5748) = 7136, reported Operating Profit = 3621.0 (diff 97.1%)"
+profitandloss,DQ-05,WARNING,CHOLAFIN,2024-03,operating_profit,5385.0,"Operating profit mismatch: Sales (19163) - Expenses (9231) = 9932, reported Operating Profit = 5385.0 (diff 84.4%)"
+profitandloss,DQ-05,WARNING,CHOLAFIN,TTM,operating_profit,6452.0,"Operating profit mismatch: Sales (22502) - Expenses (10875) = 11627, reported Operating Profit = 6452.0 (diff 80.2%)"
+profitandloss,DQ-05,WARNING,CIPLA,2013-03,operating_profit,6065.0,"Operating profit mismatch: Sales (8279) - Expenses (34) = 8245, reported Operating Profit = 6065.0 (diff 35.9%)"
+profitandloss,DQ-05,WARNING,CIPLA,2014-03,operating_profit,8026.0,"Operating profit mismatch: Sales (10173) - Expenses (146) = 10027, reported Operating Profit = 8026.0 (diff 24.9%)"
+profitandloss,DQ-05,WARNING,CIPLA,2015-03,operating_profit,9183.0,"Operating profit mismatch: Sales (11345) - Expenses (168) = 11177, reported Operating Profit = 9183.0 (diff 21.7%)"
+profitandloss,DQ-05,WARNING,CIPLA,2016-03,operating_profit,11310.0,"Operating profit mismatch: Sales (13790) - Expenses (207) = 13583, reported Operating Profit = 11310.0 (diff 20.1%)"
+profitandloss,DQ-05,WARNING,CIPLA,2017-03,operating_profit,11898.0,"Operating profit mismatch: Sales (14394) - Expenses (159) = 14235, reported Operating Profit = 11898.0 (diff 19.6%)"
+profitandloss,DQ-05,WARNING,CIPLA,2018-03,operating_profit,12329.0,"Operating profit mismatch: Sales (15156) - Expenses (114) = 15042, reported Operating Profit = 12329.0 (diff 22.0%)"
+profitandloss,DQ-05,WARNING,CIPLA,2019-03,operating_profit,13265.0,"Operating profit mismatch: Sales (16362) - Expenses (168) = 16194, reported Operating Profit = 13265.0 (diff 22.1%)"
+profitandloss,DQ-05,WARNING,CIPLA,2020-03,operating_profit,13926.0,"Operating profit mismatch: Sales (17132) - Expenses (197) = 16935, reported Operating Profit = 13926.0 (diff 21.6%)"
+profitandloss,DQ-05,WARNING,CIPLA,2021-03,operating_profit,14907.0,"Operating profit mismatch: Sales (19160) - Expenses (161) = 18999, reported Operating Profit = 14907.0 (diff 27.5%)"
+profitandloss,DQ-05,WARNING,CIPLA,2022-03,operating_profit,17211.0,"Operating profit mismatch: Sales (21763) - Expenses (106) = 21657, reported Operating Profit = 17211.0 (diff 25.8%)"
+profitandloss,DQ-05,WARNING,CIPLA,2023-03,operating_profit,17726.0,"Operating profit mismatch: Sales (22753) - Expenses (110) = 22643, reported Operating Profit = 17726.0 (diff 27.7%)"
+profitandloss,DQ-05,WARNING,CIPLA,2024-03,operating_profit,19483.0,"Operating profit mismatch: Sales (25774) - Expenses (90) = 25684, reported Operating Profit = 19483.0 (diff 31.8%)"
+profitandloss,DQ-05,WARNING,CIPLA,TTM,operating_profit,20075.0,"Operating profit mismatch: Sales (26981) - Expenses (66) = 26915, reported Operating Profit = 20075.0 (diff 34.1%)"
+profitandloss,DQ-05,WARNING,COALINDIA,2013-03,operating_profit,50216.0,"Operating profit mismatch: Sales (68303) - Expenses (46) = 68257, reported Operating Profit = 50216.0 (diff 35.9%)"
+profitandloss,DQ-05,WARNING,COALINDIA,2014-03,operating_profit,52842.0,"Operating profit mismatch: Sales (70608) - Expenses (59) = 70549, reported Operating Profit = 52842.0 (diff 33.5%)"
+profitandloss,DQ-05,WARNING,COALINDIA,2015-03,operating_profit,56777.0,"Operating profit mismatch: Sales (74120) - Expenses (9) = 74111, reported Operating Profit = 56777.0 (diff 30.5%)"
+profitandloss,DQ-05,WARNING,COALINDIA,2016-03,operating_profit,59147.0,"Operating profit mismatch: Sales (77861) - Expenses (388) = 77473, reported Operating Profit = 59147.0 (diff 31.0%)"
+profitandloss,DQ-05,WARNING,COALINDIA,2017-03,operating_profit,65716.0,"Operating profit mismatch: Sales (78164) - Expenses (410) = 77754, reported Operating Profit = 65716.0 (diff 18.3%)"
+profitandloss,DQ-05,WARNING,COALINDIA,2018-03,operating_profit,75956.0,"Operating profit mismatch: Sales (85244) - Expenses (430) = 84814, reported Operating Profit = 75956.0 (diff 11.7%)"
+profitandloss,DQ-05,WARNING,COALINDIA,2019-03,operating_profit,74579.0,"Operating profit mismatch: Sales (99586) - Expenses (264) = 99322, reported Operating Profit = 74579.0 (diff 33.2%)"
+profitandloss,DQ-05,WARNING,COALINDIA,2020-03,operating_profit,74500.0,"Operating profit mismatch: Sales (96080) - Expenses (503) = 95577, reported Operating Profit = 74500.0 (diff 28.3%)"
+profitandloss,DQ-05,WARNING,COALINDIA,2021-03,operating_profit,71398.0,"Operating profit mismatch: Sales (90026) - Expenses (642) = 89384, reported Operating Profit = 71398.0 (diff 25.2%)"
+profitandloss,DQ-05,WARNING,COALINDIA,2022-03,operating_profit,84995.0,"Operating profit mismatch: Sales (109715) - Expenses (541) = 109174, reported Operating Profit = 84995.0 (diff 28.4%)"
+profitandloss,DQ-05,WARNING,COALINDIA,2023-03,operating_profit,94020.0,"Operating profit mismatch: Sales (138252) - Expenses (684) = 137568, reported Operating Profit = 94020.0 (diff 46.3%)"
+profitandloss,DQ-05,WARNING,COALINDIA,2024-03,operating_profit,94352.0,"Operating profit mismatch: Sales (142324) - Expenses (819) = 141505, reported Operating Profit = 94352.0 (diff 50.0%)"
+profitandloss,DQ-05,WARNING,COALINDIA,TTM,operating_profit,93717.0,"Operating profit mismatch: Sales (140328) - Expenses (875) = 139453, reported Operating Profit = 93717.0 (diff 48.8%)"
+profitandloss,DQ-08,WARNING,DLF,2014-03,tax_percentage,-16.0,Effective tax rate out of bounds: -16.0%
+profitandloss,DQ-08,WARNING,DRREDDY,2020-03,tax_percentage,-7.0,Effective tax rate out of bounds: -7.0%
+profitandloss,DQ-08,WARNING,GODREJCP,2019-03,tax_percentage,-12.0,Effective tax rate out of bounds: -12.0%
+profitandloss,DQ-08,WARNING,GRASIM,2020-03,tax_percentage,-1.0,Effective tax rate out of bounds: -1.0%
+profitandloss,DQ-05,WARNING,HDFCBANK,2013-03,operating_profit,12631.0,"Operating profit mismatch: Sales (35861) - Expenses (19695) = 16166, reported Operating Profit = 12631.0 (diff 28.0%)"
+profitandloss,DQ-05,WARNING,HDFCBANK,2014-03,operating_profit,13508.0,"Operating profit mismatch: Sales (42555) - Expenses (23445) = 19110, reported Operating Profit = 13508.0 (diff 41.5%)"
+profitandloss,DQ-05,WARNING,HDFCBANK,2015-03,operating_profit,16164.0,"Operating profit mismatch: Sales (50666) - Expenses (27288) = 23378, reported Operating Profit = 16164.0 (diff 44.6%)"
+profitandloss,DQ-05,WARNING,HDFCBANK,2016-03,operating_profit,20055.0,"Operating profit mismatch: Sales (63162) - Expenses (34070) = 29092, reported Operating Profit = 20055.0 (diff 45.1%)"
+profitandloss,DQ-05,WARNING,HDFCBANK,2017-03,operating_profit,23856.0,"Operating profit mismatch: Sales (73271) - Expenses (38042) = 35229, reported Operating Profit = 23856.0 (diff 47.7%)"
+profitandloss,DQ-05,WARNING,HDFCBANK,2018-03,operating_profit,29532.0,"Operating profit mismatch: Sales (85288) - Expenses (42381) = 42907, reported Operating Profit = 29532.0 (diff 45.3%)"
+profitandloss,DQ-05,WARNING,HDFCBANK,2019-03,operating_profit,34856.0,"Operating profit mismatch: Sales (105161) - Expenses (53713) = 51448, reported Operating Profit = 34856.0 (diff 47.6%)"
+profitandloss,DQ-05,WARNING,HDFCBANK,2020-03,operating_profit,45459.0,"Operating profit mismatch: Sales (122189) - Expenses (62137) = 60052, reported Operating Profit = 45459.0 (diff 32.1%)"
+profitandloss,DQ-05,WARNING,HDFCBANK,2021-03,operating_profit,52457.0,"Operating profit mismatch: Sales (128552) - Expenses (59248) = 69304, reported Operating Profit = 52457.0 (diff 32.1%)"
+profitandloss,DQ-05,WARNING,HDFCBANK,2022-03,operating_profit,56557.0,"Operating profit mismatch: Sales (135936) - Expenses (58584) = 77352, reported Operating Profit = 56557.0 (diff 36.8%)"
+profitandloss,DQ-05,WARNING,HDFCBANK,2023-03,operating_profit,63042.0,"Operating profit mismatch: Sales (170754) - Expenses (77780) = 92974, reported Operating Profit = 63042.0 (diff 47.5%)"
+profitandloss,DQ-05,WARNING,HDFCBANK,2024-03,operating_profit,174196.0,"Operating profit mismatch: Sales (283649) - Expenses (154139) = 129510, reported Operating Profit = 174196.0 (diff 25.7%)"
+profitandloss,DQ-05,WARNING,HDFCBANK,TTM,operating_profit,206009.0,"Operating profit mismatch: Sales (329022) - Expenses (180600) = 148422, reported Operating Profit = 206009.0 (diff 28.0%)"
+profitandloss,DQ-05,WARNING,HDFCLIFE,2013-03,operating_profit,13535.0,"Operating profit mismatch: Sales (14060) - Expenses (15) = 14045, reported Operating Profit = 13535.0 (diff 3.8%)"
+profitandloss,DQ-05,WARNING,HDFCLIFE,2014-03,operating_profit,16561.0,"Operating profit mismatch: Sales (17166) - Expenses (11) = 17155, reported Operating Profit = 16561.0 (diff 3.6%)"
+profitandloss,DQ-05,WARNING,HDFCLIFE,2015-03,operating_profit,26341.0,"Operating profit mismatch: Sales (27215) - Expenses (-14) = 27229, reported Operating Profit = 26341.0 (diff 3.4%)"
+profitandloss,DQ-05,WARNING,HDFCLIFE,2016-03,operating_profit,17187.0,"Operating profit mismatch: Sales (18141) - Expenses (8) = 18133, reported Operating Profit = 17187.0 (diff 5.5%)"
+profitandloss,DQ-05,WARNING,HDFCLIFE,2017-03,operating_profit,29674.0,"Operating profit mismatch: Sales (30647) - Expenses (9) = 30638, reported Operating Profit = 29674.0 (diff 3.2%)"
+profitandloss,DQ-05,WARNING,HDFCLIFE,2018-03,operating_profit,31186.0,"Operating profit mismatch: Sales (32260) - Expenses (11) = 32249, reported Operating Profit = 31186.0 (diff 3.4%)"
+profitandloss,DQ-05,WARNING,HDFCLIFE,2019-03,operating_profit,37640.0,"Operating profit mismatch: Sales (38855) - Expenses (14) = 38841, reported Operating Profit = 37640.0 (diff 3.2%)"
+profitandloss,DQ-05,WARNING,HDFCLIFE,2020-03,operating_profit,28239.0,"Operating profit mismatch: Sales (29380) - Expenses (0) = 29380, reported Operating Profit = 28239.0 (diff 4.0%)"
+profitandloss,DQ-05,WARNING,HDFCLIFE,2021-03,operating_profit,70294.0,"Operating profit mismatch: Sales (71528) - Expenses (0) = 71528, reported Operating Profit = 70294.0 (diff 1.8%)"
+profitandloss,DQ-05,WARNING,HDFCLIFE,2022-03,operating_profit,66348.0,"Operating profit mismatch: Sales (67126) - Expenses (0) = 67126, reported Operating Profit = 66348.0 (diff 1.2%)"
+profitandloss,DQ-08,WARNING,HDFCLIFE,2024-03,tax_percentage,-61.0,Effective tax rate out of bounds: -61.0%
+profitandloss,DQ-05,WARNING,HEROMOTOCO,2014-03,operating_profit,21722.0,"Operating profit mismatch: Sales (25275) - Expenses (12) = 25263, reported Operating Profit = 21722.0 (diff 16.3%)"
+profitandloss,DQ-05,WARNING,HEROMOTOCO,2015-03,operating_profit,24018.0,"Operating profit mismatch: Sales (27538) - Expenses (12) = 27526, reported Operating Profit = 24018.0 (diff 14.6%)"
+profitandloss,DQ-05,WARNING,HEROMOTOCO,2016-03,operating_profit,24033.0,"Operating profit mismatch: Sales (28457) - Expenses (15) = 28442, reported Operating Profit = 24033.0 (diff 18.3%)"
+profitandloss,DQ-05,WARNING,HEROMOTOCO,2017-03,operating_profit,24025.0,"Operating profit mismatch: Sales (28610) - Expenses (27) = 28583, reported Operating Profit = 24025.0 (diff 19.0%)"
+profitandloss,DQ-05,WARNING,HEROMOTOCO,2018-03,operating_profit,27124.0,"Operating profit mismatch: Sales (32458) - Expenses (31) = 32427, reported Operating Profit = 27124.0 (diff 19.6%)"
+profitandloss,DQ-05,WARNING,HEROMOTOCO,2019-03,operating_profit,28946.0,"Operating profit mismatch: Sales (33971) - Expenses (37) = 33934, reported Operating Profit = 28946.0 (diff 17.2%)"
+profitandloss,DQ-05,WARNING,HEROMOTOCO,2020-03,operating_profit,25184.0,"Operating profit mismatch: Sales (29254) - Expenses (47) = 29207, reported Operating Profit = 25184.0 (diff 16.0%)"
+profitandloss,DQ-05,WARNING,HEROMOTOCO,2021-03,operating_profit,26902.0,"Operating profit mismatch: Sales (30959) - Expenses (46) = 30913, reported Operating Profit = 26902.0 (diff 14.9%)"
+profitandloss,DQ-05,WARNING,HEROMOTOCO,2022-03,operating_profit,26295.0,"Operating profit mismatch: Sales (29551) - Expenses (53) = 29498, reported Operating Profit = 26295.0 (diff 12.2%)"
+profitandloss,DQ-05,WARNING,HEROMOTOCO,2023-03,operating_profit,30060.0,"Operating profit mismatch: Sales (34158) - Expenses (105) = 34053, reported Operating Profit = 30060.0 (diff 13.3%)"
+profitandloss,DQ-05,WARNING,HEROMOTOCO,2024-03,operating_profit,32554.0,"Operating profit mismatch: Sales (37789) - Expenses (76) = 37713, reported Operating Profit = 32554.0 (diff 15.8%)"
+profitandloss,DQ-05,WARNING,HEROMOTOCO,TTM,operating_profit,34537.0,"Operating profit mismatch: Sales (40098) - Expenses (68) = 40030, reported Operating Profit = 34537.0 (diff 15.9%)"
+profitandloss,DQ-05,WARNING,HINDALCO,2013-03,operating_profit,72494.0,"Operating profit mismatch: Sales (80193) - Expenses (2079) = 78114, reported Operating Profit = 72494.0 (diff 7.8%)"
+profitandloss,DQ-05,WARNING,HINDALCO,2014-03,operating_profit,79671.0,"Operating profit mismatch: Sales (87695) - Expenses (2702) = 84993, reported Operating Profit = 79671.0 (diff 6.7%)"
+profitandloss,DQ-05,WARNING,HINDALCO,2015-03,operating_profit,95437.0,"Operating profit mismatch: Sales (104281) - Expenses (4178) = 100103, reported Operating Profit = 95437.0 (diff 4.9%)"
+profitandloss,DQ-05,WARNING,HINDALCO,2016-03,operating_profit,90981.0,"Operating profit mismatch: Sales (98759) - Expenses (5134) = 93625, reported Operating Profit = 90981.0 (diff 2.9%)"
+profitandloss,DQ-05,WARNING,HINDALCO,2017-03,operating_profit,87867.0,"Operating profit mismatch: Sales (100184) - Expenses (5742) = 94442, reported Operating Profit = 87867.0 (diff 7.5%)"
+profitandloss,DQ-05,WARNING,HINDALCO,2018-03,operating_profit,101488.0,"Operating profit mismatch: Sales (115183) - Expenses (3911) = 111272, reported Operating Profit = 101488.0 (diff 9.6%)"
+profitandloss,DQ-05,WARNING,HINDALCO,2019-03,operating_profit,115031.0,"Operating profit mismatch: Sales (130542) - Expenses (3778) = 126764, reported Operating Profit = 115031.0 (diff 10.2%)"
+profitandloss,DQ-05,WARNING,HINDALCO,2020-03,operating_profit,103838.0,"Operating profit mismatch: Sales (118144) - Expenses (4197) = 113947, reported Operating Profit = 103838.0 (diff 9.7%)"
+profitandloss,DQ-05,WARNING,HINDALCO,2021-03,operating_profit,114449.0,"Operating profit mismatch: Sales (132008) - Expenses (3738) = 128270, reported Operating Profit = 114449.0 (diff 12.1%)"
+profitandloss,DQ-05,WARNING,HINDALCO,2022-03,operating_profit,166712.0,"Operating profit mismatch: Sales (195059) - Expenses (3768) = 191291, reported Operating Profit = 166712.0 (diff 14.7%)"
+profitandloss,DQ-05,WARNING,HINDALCO,2023-03,operating_profit,200536.0,"Operating profit mismatch: Sales (223202) - Expenses (3646) = 219556, reported Operating Profit = 200536.0 (diff 9.5%)"
+profitandloss,DQ-05,WARNING,HINDALCO,2024-03,operating_profit,192090.0,"Operating profit mismatch: Sales (215962) - Expenses (3858) = 212104, reported Operating Profit = 192090.0 (diff 10.4%)"
+profitandloss,DQ-05,WARNING,HINDALCO,TTM,operating_profit,196087.0,"Operating profit mismatch: Sales (224018) - Expenses (3560) = 220458, reported Operating Profit = 196087.0 (diff 12.4%)"
+profitandloss,DQ-05,WARNING,HINDUNILVR,2013-03,operating_profit,22784.0,"Operating profit mismatch: Sales (27004) - Expenses (26) = 26978, reported Operating Profit = 22784.0 (diff 18.4%)"
+profitandloss,DQ-05,WARNING,HINDUNILVR,2014-03,operating_profit,24475.0,"Operating profit mismatch: Sales (29234) - Expenses (41) = 29193, reported Operating Profit = 24475.0 (diff 19.3%)"
+profitandloss,DQ-05,WARNING,HINDUNILVR,2015-03,operating_profit,26560.0,"Operating profit mismatch: Sales (31972) - Expenses (18) = 31954, reported Operating Profit = 26560.0 (diff 20.3%)"
+profitandloss,DQ-05,WARNING,HINDUNILVR,2016-03,operating_profit,26276.0,"Operating profit mismatch: Sales (32186) - Expenses (17) = 32169, reported Operating Profit = 26276.0 (diff 22.4%)"
+profitandloss,DQ-05,WARNING,HINDUNILVR,2017-03,operating_profit,26834.0,"Operating profit mismatch: Sales (33162) - Expenses (35) = 33127, reported Operating Profit = 26834.0 (diff 23.5%)"
+profitandloss,DQ-05,WARNING,HINDUNILVR,2018-03,operating_profit,28046.0,"Operating profit mismatch: Sales (35545) - Expenses (26) = 35519, reported Operating Profit = 28046.0 (diff 26.6%)"
+profitandloss,DQ-05,WARNING,HINDUNILVR,2019-03,operating_profit,30430.0,"Operating profit mismatch: Sales (39310) - Expenses (33) = 39277, reported Operating Profit = 30430.0 (diff 29.1%)"
+profitandloss,DQ-05,WARNING,HINDUNILVR,2020-03,operating_profit,29922.0,"Operating profit mismatch: Sales (39783) - Expenses (118) = 39665, reported Operating Profit = 29922.0 (diff 32.6%)"
+profitandloss,DQ-05,WARNING,HINDUNILVR,2021-03,operating_profit,35402.0,"Operating profit mismatch: Sales (47028) - Expenses (117) = 46911, reported Operating Profit = 35402.0 (diff 32.5%)"
+profitandloss,DQ-05,WARNING,HINDUNILVR,2022-03,operating_profit,39589.0,"Operating profit mismatch: Sales (52446) - Expenses (106) = 52340, reported Operating Profit = 39589.0 (diff 32.2%)"
+profitandloss,DQ-05,WARNING,HINDUNILVR,2023-03,operating_profit,46433.0,"Operating profit mismatch: Sales (60580) - Expenses (114) = 60466, reported Operating Profit = 46433.0 (diff 30.2%)"
+profitandloss,DQ-05,WARNING,HINDUNILVR,2024-03,operating_profit,47237.0,"Operating profit mismatch: Sales (61896) - Expenses (334) = 61562, reported Operating Profit = 47237.0 (diff 30.3%)"
+profitandloss,DQ-05,WARNING,HINDUNILVR,TTM,operating_profit,47902.0,"Operating profit mismatch: Sales (62661) - Expenses (420) = 62241, reported Operating Profit = 47902.0 (diff 29.9%)"
+profitandloss,DQ-05,WARNING,ICICIBANK,2013-03,operating_profit,31684.0,"Operating profit mismatch: Sales (44885) - Expenses (28285) = 16600, reported Operating Profit = 31684.0 (diff 47.6%)"
+profitandloss,DQ-05,WARNING,ICICIBANK,2014-03,operating_profit,32852.0,"Operating profit mismatch: Sales (49479) - Expenses (29711) = 19768, reported Operating Profit = 32852.0 (diff 39.8%)"
+profitandloss,DQ-05,WARNING,ICICIBANK,2015-03,operating_profit,38766.0,"Operating profit mismatch: Sales (54964) - Expenses (32318) = 22646, reported Operating Profit = 38766.0 (diff 41.6%)"
+profitandloss,DQ-05,WARNING,ICICIBANK,2016-03,operating_profit,52252.0,"Operating profit mismatch: Sales (59294) - Expenses (33996) = 25298, reported Operating Profit = 52252.0 (diff 51.6%)"
+profitandloss,DQ-05,WARNING,ICICIBANK,2017-03,operating_profit,63841.0,"Operating profit mismatch: Sales (60940) - Expenses (34836) = 26104, reported Operating Profit = 63841.0 (diff 59.1%)"
+profitandloss,DQ-05,WARNING,ICICIBANK,2018-03,operating_profit,72806.0,"Operating profit mismatch: Sales (62162) - Expenses (34262) = 27900, reported Operating Profit = 72806.0 (diff 61.7%)"
+profitandloss,DQ-05,WARNING,ICICIBANK,2019-03,operating_profit,83775.0,"Operating profit mismatch: Sales (71982) - Expenses (39178) = 32804, reported Operating Profit = 83775.0 (diff 60.8%)"
+profitandloss,DQ-05,WARNING,ICICIBANK,2020-03,operating_profit,85361.0,"Operating profit mismatch: Sales (84836) - Expenses (44666) = 40170, reported Operating Profit = 85361.0 (diff 52.9%)"
+profitandloss,DQ-05,WARNING,ICICIBANK,2021-03,operating_profit,91309.0,"Operating profit mismatch: Sales (89163) - Expenses (42659) = 46504, reported Operating Profit = 91309.0 (diff 49.1%)"
+profitandloss,DQ-05,WARNING,ICICIBANK,2022-03,operating_profit,80798.0,"Operating profit mismatch: Sales (95407) - Expenses (41167) = 54240, reported Operating Profit = 80798.0 (diff 32.9%)"
+profitandloss,DQ-05,WARNING,ICICIBANK,2023-03,operating_profit,87864.0,"Operating profit mismatch: Sales (121067) - Expenses (50543) = 70524, reported Operating Profit = 87864.0 (diff 19.7%)"
+profitandloss,DQ-05,WARNING,ICICIBANK,2024-03,operating_profit,99560.0,"Operating profit mismatch: Sales (159516) - Expenses (74108) = 85408, reported Operating Profit = 99560.0 (diff 14.2%)"
+profitandloss,DQ-05,WARNING,ICICIBANK,TTM,operating_profit,125722.0,"Operating profit mismatch: Sales (180551) - Expenses (86404) = 94147, reported Operating Profit = 125722.0 (diff 25.1%)"
+profitandloss,DQ-05,WARNING,ICICIGI,2013-03,operating_profit,4191.0,"Operating profit mismatch: Sales (4012) - Expenses (8) = 4004, reported Operating Profit = 4191.0 (diff 4.5%)"
+profitandloss,DQ-05,WARNING,ICICIGI,2014-03,operating_profit,4578.0,"Operating profit mismatch: Sales (4352) - Expenses (9) = 4343, reported Operating Profit = 4578.0 (diff 5.1%)"
+profitandloss,DQ-05,WARNING,ICICIGI,2015-03,operating_profit,4456.0,"Operating profit mismatch: Sales (4234) - Expenses (12) = 4222, reported Operating Profit = 4456.0 (diff 5.3%)"
+profitandloss,DQ-05,WARNING,ICICIGI,2016-03,operating_profit,5269.0,"Operating profit mismatch: Sales (6033) - Expenses (0) = 6033, reported Operating Profit = 5269.0 (diff 14.5%)"
+profitandloss,DQ-05,WARNING,ICICIGI,2017-03,operating_profit,6601.0,"Operating profit mismatch: Sales (7520) - Expenses (0) = 7520, reported Operating Profit = 6601.0 (diff 13.9%)"
+profitandloss,DQ-05,WARNING,ICICIGI,2018-03,operating_profit,7174.0,"Operating profit mismatch: Sales (6912) - Expenses (59) = 6853, reported Operating Profit = 7174.0 (diff 4.5%)"
+profitandloss,DQ-05,WARNING,ICICIGI,2019-03,operating_profit,9494.0,"Operating profit mismatch: Sales (11163) - Expenses (70) = 11093, reported Operating Profit = 9494.0 (diff 16.8%)"
+profitandloss,DQ-05,WARNING,ICICIGI,2020-03,operating_profit,9745.0,"Operating profit mismatch: Sales (11517) - Expenses (0) = 11517, reported Operating Profit = 9745.0 (diff 18.2%)"
+profitandloss,DQ-05,WARNING,ICICIGI,2021-03,operating_profit,10090.0,"Operating profit mismatch: Sales (12161) - Expenses (0) = 12161, reported Operating Profit = 10090.0 (diff 20.5%)"
+profitandloss,DQ-05,WARNING,ICICIGI,2022-03,operating_profit,15010.0,"Operating profit mismatch: Sales (16026) - Expenses (0) = 16026, reported Operating Profit = 15010.0 (diff 6.8%)"
+profitandloss,DQ-05,WARNING,ICICIGI,2023-03,operating_profit,16612.0,"Operating profit mismatch: Sales (17876) - Expenses (0) = 17876, reported Operating Profit = 16612.0 (diff 7.6%)"
+profitandloss,DQ-05,WARNING,ICICIGI,2024-03,operating_profit,17910.0,"Operating profit mismatch: Sales (20487) - Expenses (0) = 20487, reported Operating Profit = 17910.0 (diff 14.4%)"
+profitandloss,DQ-05,WARNING,ICICIGI,TTM,operating_profit,19938.0,"Operating profit mismatch: Sales (23301) - Expenses (0) = 23301, reported Operating Profit = 19938.0 (diff 16.9%)"
+profitandloss,DQ-05,WARNING,ICICIPRULI,2013-03,operating_profit,19280.0,"Operating profit mismatch: Sales (20025) - Expenses (14) = 20011, reported Operating Profit = 19280.0 (diff 3.8%)"
+profitandloss,DQ-05,WARNING,ICICIPRULI,2014-03,operating_profit,20384.0,"Operating profit mismatch: Sales (21888) - Expenses (15) = 21873, reported Operating Profit = 20384.0 (diff 7.3%)"
+profitandloss,DQ-05,WARNING,ICICIPRULI,2015-03,operating_profit,32798.0,"Operating profit mismatch: Sales (34453) - Expenses (17) = 34436, reported Operating Profit = 32798.0 (diff 5.0%)"
+profitandloss,DQ-05,WARNING,ICICIPRULI,2016-03,operating_profit,19008.0,"Operating profit mismatch: Sales (20849) - Expenses (0) = 20849, reported Operating Profit = 19008.0 (diff 9.7%)"
+profitandloss,DQ-05,WARNING,ICICIPRULI,2017-03,operating_profit,36010.0,"Operating profit mismatch: Sales (37816) - Expenses (15) = 37801, reported Operating Profit = 36010.0 (diff 5.0%)"
+profitandloss,DQ-05,WARNING,ICICIPRULI,2018-03,operating_profit,37062.0,"Operating profit mismatch: Sales (38832) - Expenses (20) = 38812, reported Operating Profit = 37062.0 (diff 4.7%)"
+profitandloss,DQ-05,WARNING,ICICIPRULI,2019-03,operating_profit,40922.0,"Operating profit mismatch: Sales (41463) - Expenses (23) = 41440, reported Operating Profit = 40922.0 (diff 1.3%)"
+profitandloss,DQ-05,WARNING,ICICIPRULI,2020-03,operating_profit,21344.0,"Operating profit mismatch: Sales (21025) - Expenses (0) = 21025, reported Operating Profit = 21344.0 (diff 1.5%)"
+profitandloss,DQ-05,WARNING,ICICIPRULI,2022-03,operating_profit,65728.0,"Operating profit mismatch: Sales (63564) - Expenses (0) = 63564, reported Operating Profit = 65728.0 (diff 3.3%)"
+profitandloss,DQ-05,WARNING,ICICIPRULI,2023-03,operating_profit,52235.0,"Operating profit mismatch: Sales (50478) - Expenses (0) = 50478, reported Operating Profit = 52235.0 (diff 3.4%)"
+profitandloss,DQ-05,WARNING,ICICIPRULI,2024-03,operating_profit,92136.0,"Operating profit mismatch: Sales (90307) - Expenses (0) = 90307, reported Operating Profit = 92136.0 (diff 2.0%)"
+profitandloss,DQ-05,WARNING,INDUSINDBK,2013-03,operating_profit,1947.0,"Operating profit mismatch: Sales (6983) - Expenses (4750) = 2233, reported Operating Profit = 1947.0 (diff 14.7%)"
+profitandloss,DQ-05,WARNING,INDUSINDBK,2014-03,operating_profit,2555.0,"Operating profit mismatch: Sales (8254) - Expenses (5363) = 2891, reported Operating Profit = 2555.0 (diff 13.2%)"
+profitandloss,DQ-05,WARNING,INDUSINDBK,2015-03,operating_profit,3133.0,"Operating profit mismatch: Sales (9692) - Expenses (6272) = 3420, reported Operating Profit = 3133.0 (diff 9.2%)"
+profitandloss,DQ-05,WARNING,INDUSINDBK,2016-03,operating_profit,4188.0,"Operating profit mismatch: Sales (11872) - Expenses (7355) = 4517, reported Operating Profit = 4188.0 (diff 7.9%)"
+profitandloss,DQ-05,WARNING,INDUSINDBK,2017-03,operating_profit,5684.0,"Operating profit mismatch: Sales (14406) - Expenses (8343) = 6063, reported Operating Profit = 5684.0 (diff 6.7%)"
+profitandloss,DQ-05,WARNING,INDUSINDBK,2018-03,operating_profit,6555.0,"Operating profit mismatch: Sales (17281) - Expenses (9783) = 7498, reported Operating Profit = 6555.0 (diff 14.4%)"
+profitandloss,DQ-05,WARNING,INDUSINDBK,2019-03,operating_profit,9283.0,"Operating profit mismatch: Sales (22261) - Expenses (13415) = 8846, reported Operating Profit = 9283.0 (diff 4.7%)"
+profitandloss,DQ-05,WARNING,INDUSINDBK,2020-03,operating_profit,12611.0,"Operating profit mismatch: Sales (28783) - Expenses (16724) = 12059, reported Operating Profit = 12611.0 (diff 4.4%)"
+profitandloss,DQ-05,WARNING,INDUSINDBK,2021-03,operating_profit,15997.0,"Operating profit mismatch: Sales (29000) - Expenses (15472) = 13528, reported Operating Profit = 15997.0 (diff 15.4%)"
+profitandloss,DQ-05,WARNING,INDUSINDBK,2022-03,operating_profit,15840.0,"Operating profit mismatch: Sales (30822) - Expenses (15822) = 15000, reported Operating Profit = 15840.0 (diff 5.3%)"
+profitandloss,DQ-05,WARNING,INDUSINDBK,2023-03,operating_profit,15525.0,"Operating profit mismatch: Sales (36368) - Expenses (18776) = 17592, reported Operating Profit = 15525.0 (diff 13.3%)"
+profitandloss,DQ-05,WARNING,INDUSINDBK,2024-03,operating_profit,17638.0,"Operating profit mismatch: Sales (45748) - Expenses (25132) = 20616, reported Operating Profit = 17638.0 (diff 16.9%)"
+profitandloss,DQ-05,WARNING,INDUSINDBK,TTM,operating_profit,20104.0,"Operating profit mismatch: Sales (49004) - Expenses (27577) = 21427, reported Operating Profit = 20104.0 (diff 6.6%)"
+profitandloss,DQ-08,WARNING,IOC,2020-03,tax_percentage,-74.0,Effective tax rate out of bounds: -74.0%
+profitandloss,DQ-08,WARNING,JINDALSTEL,2015-03,tax_percentage,-6.0,Effective tax rate out of bounds: -6.0%
+profitandloss,DQ-08,WARNING,JINDALSTEL,2016-03,tax_percentage,-22.0,Effective tax rate out of bounds: -22.0%
+profitandloss,DQ-08,WARNING,JINDALSTEL,2017-03,tax_percentage,-17.0,Effective tax rate out of bounds: -17.0%
+profitandloss,DQ-08,WARNING,JINDALSTEL,2018-03,tax_percentage,-13.0,Effective tax rate out of bounds: -13.0%
+profitandloss,DQ-08,WARNING,JINDALSTEL,2019-03,tax_percentage,-14.0,Effective tax rate out of bounds: -14.0%
+profitandloss,DQ-08,WARNING,JSWSTEEL,2016-03,tax_percentage,-80.0,Effective tax rate out of bounds: -80.0%
+profitandloss,DQ-08,WARNING,JSWSTEEL,2020-03,tax_percentage,-30.0,Effective tax rate out of bounds: -30.0%
+profitandloss,DQ-05,WARNING,KOTAKBANK,2013-03,operating_profit,6603.0,"Operating profit mismatch: Sales (10838) - Expenses (6024) = 4814, reported Operating Profit = 6603.0 (diff 27.1%)"
+profitandloss,DQ-05,WARNING,KOTAKBANK,2014-03,operating_profit,7053.0,"Operating profit mismatch: Sales (11986) - Expenses (6312) = 5674, reported Operating Profit = 7053.0 (diff 19.6%)"
+profitandloss,DQ-05,WARNING,KOTAKBANK,2015-03,operating_profit,9718.0,"Operating profit mismatch: Sales (13319) - Expenses (6966) = 6353, reported Operating Profit = 9718.0 (diff 34.6%)"
+profitandloss,DQ-05,WARNING,KOTAKBANK,2016-03,operating_profit,11541.0,"Operating profit mismatch: Sales (20402) - Expenses (11123) = 9279, reported Operating Profit = 11541.0 (diff 19.6%)"
+profitandloss,DQ-05,WARNING,KOTAKBANK,2017-03,operating_profit,14832.0,"Operating profit mismatch: Sales (22324) - Expenses (11458) = 10866, reported Operating Profit = 14832.0 (diff 26.7%)"
+profitandloss,DQ-05,WARNING,KOTAKBANK,2018-03,operating_profit,16805.0,"Operating profit mismatch: Sales (25131) - Expenses (12467) = 12664, reported Operating Profit = 16805.0 (diff 24.6%)"
+profitandloss,DQ-05,WARNING,KOTAKBANK,2019-03,operating_profit,19758.0,"Operating profit mismatch: Sales (29831) - Expenses (15187) = 14644, reported Operating Profit = 19758.0 (diff 25.9%)"
+profitandloss,DQ-05,WARNING,KOTAKBANK,2020-03,operating_profit,22578.0,"Operating profit mismatch: Sales (33474) - Expenses (15901) = 17573, reported Operating Profit = 22578.0 (diff 22.2%)"
+profitandloss,DQ-05,WARNING,KOTAKBANK,2021-03,operating_profit,29812.0,"Operating profit mismatch: Sales (32820) - Expenses (12967) = 19853, reported Operating Profit = 29812.0 (diff 33.4%)"
+profitandloss,DQ-05,WARNING,KOTAKBANK,2022-03,operating_profit,30699.0,"Operating profit mismatch: Sales (33741) - Expenses (11554) = 22187, reported Operating Profit = 30699.0 (diff 27.7%)"
+profitandloss,DQ-05,WARNING,KOTAKBANK,2023-03,operating_profit,33485.0,"Operating profit mismatch: Sales (42151) - Expenses (14411) = 27740, reported Operating Profit = 33485.0 (diff 17.2%)"
+profitandloss,DQ-05,WARNING,KOTAKBANK,2024-03,operating_profit,47052.0,"Operating profit mismatch: Sales (56237) - Expenses (22567) = 33670, reported Operating Profit = 47052.0 (diff 28.4%)"
+profitandloss,DQ-05,WARNING,KOTAKBANK,TTM,operating_profit,50872.0,"Operating profit mismatch: Sales (64053) - Expenses (27327) = 36726, reported Operating Profit = 50872.0 (diff 27.8%)"
+profitandloss,DQ-08,WARNING,LODHA,2021-03,tax_percentage,-44.0,Effective tax rate out of bounds: -44.0%
+profitandloss,DQ-08,WARNING,LODHA,2023-03,tax_percentage,-8.0,Effective tax rate out of bounds: -8.0%
+profitandloss,DQ-11,WARNING,M&M,2020-03,eps,1.0,EPS sign (1.0) does not match Net Profit sign (-321)
+profitandloss,DQ-08,WARNING,MOTHERSON,2020-03,tax_percentage,-5.0,Effective tax rate out of bounds: -5.0%
+profitandloss,DQ-11,WARNING,NAUKRI,2015-03,eps,2.0,EPS sign (2.0) does not match Net Profit sign (-14)
+profitandloss,DQ-08,WARNING,NHPC,2020-03,tax_percentage,-2.0,Effective tax rate out of bounds: -2.0%
+profitandloss,DQ-08,WARNING,NHPC,2022-03,tax_percentage,-17.0,Effective tax rate out of bounds: -17.0%
+profitandloss,DQ-08,WARNING,NTPC,2016-03,tax_percentage,-2.0,Effective tax rate out of bounds: -2.0%
+profitandloss,DQ-08,WARNING,NTPC,2019-03,tax_percentage,-25.0,Effective tax rate out of bounds: -25.0%
+profitandloss,DQ-05,WARNING,PFC,2013-03,operating_profit,5987.0,"Operating profit mismatch: Sales (17314) - Expenses (331) = 16983, reported Operating Profit = 5987.0 (diff 183.7%)"
+profitandloss,DQ-05,WARNING,PFC,2014-03,operating_profit,7607.0,"Operating profit mismatch: Sales (21407) - Expenses (748) = 20659, reported Operating Profit = 7607.0 (diff 171.6%)"
+profitandloss,DQ-05,WARNING,PFC,2015-03,operating_profit,8429.0,"Operating profit mismatch: Sales (24988) - Expenses (1103) = 23885, reported Operating Profit = 8429.0 (diff 183.4%)"
+profitandloss,DQ-05,WARNING,PFC,2016-03,operating_profit,9162.0,"Operating profit mismatch: Sales (27861) - Expenses (2042) = 25819, reported Operating Profit = 9162.0 (diff 181.8%)"
+profitandloss,DQ-05,WARNING,PFC,2017-03,operating_profit,5275.0,"Operating profit mismatch: Sales (27581) - Expenses (5538) = 22043, reported Operating Profit = 5275.0 (diff 317.9%)"
+profitandloss,DQ-05,WARNING,PFC,2018-03,operating_profit,11752.0,"Operating profit mismatch: Sales (48624) - Expenses (6583) = 42041, reported Operating Profit = 11752.0 (diff 257.7%)"
+profitandloss,DQ-05,WARNING,PFC,2019-03,operating_profit,17783.0,"Operating profit mismatch: Sales (54106) - Expenses (1696) = 52410, reported Operating Profit = 17783.0 (diff 194.7%)"
+profitandloss,DQ-05,WARNING,PFC,2020-03,operating_profit,14012.0,"Operating profit mismatch: Sales (62189) - Expenses (7332) = 54857, reported Operating Profit = 14012.0 (diff 291.5%)"
+profitandloss,DQ-05,WARNING,PFC,2021-03,operating_profit,19871.0,"Operating profit mismatch: Sales (71656) - Expenses (7102) = 64554, reported Operating Profit = 19871.0 (diff 224.9%)"
+profitandloss,DQ-05,WARNING,PFC,2022-03,operating_profit,23338.0,"Operating profit mismatch: Sales (76262) - Expenses (8215) = 68047, reported Operating Profit = 23338.0 (diff 191.6%)"
+profitandloss,DQ-05,WARNING,PFC,2023-03,operating_profit,26501.0,"Operating profit mismatch: Sales (77684) - Expenses (4167) = 73517, reported Operating Profit = 26501.0 (diff 177.4%)"
+profitandloss,DQ-05,WARNING,PFC,2024-03,operating_profit,33573.0,"Operating profit mismatch: Sales (91508) - Expenses (-27) = 91535, reported Operating Profit = 33573.0 (diff 172.6%)"
+profitandloss,DQ-05,WARNING,PFC,TTM,operating_profit,35764.0,"Operating profit mismatch: Sales (98152) - Expenses (882) = 97270, reported Operating Profit = 35764.0 (diff 172.0%)"
+profitandloss,DQ-08,WARNING,PNB,2016-03,tax_percentage,-31.0,Effective tax rate out of bounds: -31.0%
+profitandloss,DQ-08,WARNING,PNB,2018-03,tax_percentage,-37.0,Effective tax rate out of bounds: -37.0%
+profitandloss,DQ-08,WARNING,PNB,2019-03,tax_percentage,-35.0,Effective tax rate out of bounds: -35.0%
+profitandloss,DQ-08,WARNING,POWERGRID,2019-03,tax_percentage,-10.0,Effective tax rate out of bounds: -10.0%
+profitandloss,DQ-05,WARNING,SBILIFE,2015-03,operating_profit,794.0,"Operating profit mismatch: Sales (23399) - Expenses (22505) = 894, reported Operating Profit = 794.0 (diff 12.6%)"
+profitandloss,DQ-05,WARNING,SBIN,2013-03,operating_profit,-5124.0,"Operating profit mismatch: Sales (167976) - Expenses (66283) = 101693, reported Operating Profit = -5124.0 (diff 2084.6%)"
+profitandloss,DQ-05,WARNING,SBIN,2014-03,operating_profit,-14614.0,"Operating profit mismatch: Sales (189062) - Expenses (82198) = 106864, reported Operating Profit = -14614.0 (diff 831.2%)"
+profitandloss,DQ-05,WARNING,SBIN,2015-03,operating_profit,-21879.0,"Operating profit mismatch: Sales (207974) - Expenses (96675) = 111299, reported Operating Profit = -21879.0 (diff 608.7%)"
+profitandloss,DQ-05,WARNING,SBIN,2016-03,operating_profit,-32399.0,"Operating profit mismatch: Sales (220633) - Expenses (109985) = 110648, reported Operating Profit = -32399.0 (diff 441.5%)"
+profitandloss,DQ-05,WARNING,SBIN,2017-03,operating_profit,-64334.0,"Operating profit mismatch: Sales (230447) - Expenses (145666) = 84781, reported Operating Profit = -64334.0 (diff 231.8%)"
+profitandloss,DQ-05,WARNING,SBIN,2018-03,operating_profit,-86697.0,"Operating profit mismatch: Sales (228970) - Expenses (169065) = 59905, reported Operating Profit = -86697.0 (diff 169.1%)"
+profitandloss,DQ-08,WARNING,SBIN,2018-03,tax_percentage,-66.0,Effective tax rate out of bounds: -66.0%
+profitandloss,DQ-05,WARNING,SBIN,2019-03,operating_profit,-68649.0,"Operating profit mismatch: Sales (253322) - Expenses (166104) = 87218, reported Operating Profit = -68649.0 (diff 227.0%)"
+profitandloss,DQ-05,WARNING,SBIN,2020-03,operating_profit,-64181.0,"Operating profit mismatch: Sales (269852) - Expenses (172909) = 96943, reported Operating Profit = -64181.0 (diff 251.0%)"
+profitandloss,DQ-05,WARNING,SBIN,2021-03,operating_profit,-70715.0,"Operating profit mismatch: Sales (278115) - Expenses (192821) = 85294, reported Operating Profit = -70715.0 (diff 220.6%)"
+profitandloss,DQ-05,WARNING,SBIN,2022-03,operating_profit,-63570.0,"Operating profit mismatch: Sales (289973) - Expenses (197349) = 92624, reported Operating Profit = -63570.0 (diff 245.7%)"
+profitandloss,DQ-05,WARNING,SBIN,2023-03,operating_profit,-43439.0,"Operating profit mismatch: Sales (350845) - Expenses (204303) = 146542, reported Operating Profit = -43439.0 (diff 437.4%)"
+profitandloss,DQ-05,WARNING,SBIN,2024-03,operating_profit,-60297.0,"Operating profit mismatch: Sales (439189) - Expenses (239750) = 199439, reported Operating Profit = -60297.0 (diff 430.8%)"
+profitandloss,DQ-05,WARNING,SBIN,TTM,operating_profit,-59190.0,"Operating profit mismatch: Sales (469625) - Expenses (244759) = 224866, reported Operating Profit = -59190.0 (diff 479.9%)"
+profitandloss,DQ-08,WARNING,SHREECEM,2015-06,tax_percentage,-6.0,Effective tax rate out of bounds: -6.0%
+profitandloss,DQ-05,WARNING,SHRIRAMFIN,2013-03,operating_profit,2179.0,"Operating profit mismatch: Sales (7009) - Expenses (1738) = 5271, reported Operating Profit = 2179.0 (diff 141.9%)"
+profitandloss,DQ-05,WARNING,SHRIRAMFIN,2014-03,operating_profit,1999.0,"Operating profit mismatch: Sales (8476) - Expenses (2244) = 6232, reported Operating Profit = 1999.0 (diff 211.8%)"
+profitandloss,DQ-05,WARNING,SHRIRAMFIN,2015-03,operating_profit,1691.0,"Operating profit mismatch: Sales (9177) - Expenses (2781) = 6396, reported Operating Profit = 1691.0 (diff 278.2%)"
+profitandloss,DQ-05,WARNING,SHRIRAMFIN,2016-03,operating_profit,1824.0,"Operating profit mismatch: Sales (10359) - Expenses (3447) = 6912, reported Operating Profit = 1824.0 (diff 278.9%)"
+profitandloss,DQ-05,WARNING,SHRIRAMFIN,2017-03,operating_profit,1972.0,"Operating profit mismatch: Sales (10903) - Expenses (3712) = 7191, reported Operating Profit = 1972.0 (diff 264.7%)"
+profitandloss,DQ-05,WARNING,SHRIRAMFIN,2018-03,operating_profit,3805.0,"Operating profit mismatch: Sales (13502) - Expenses (3288) = 10214, reported Operating Profit = 3805.0 (diff 168.4%)"
+profitandloss,DQ-05,WARNING,SHRIRAMFIN,2019-03,operating_profit,3801.0,"Operating profit mismatch: Sales (15536) - Expenses (4171) = 11365, reported Operating Profit = 3801.0 (diff 199.0%)"
+profitandloss,DQ-05,WARNING,SHRIRAMFIN,2020-03,operating_profit,3565.0,"Operating profit mismatch: Sales (16561) - Expenses (4683) = 11878, reported Operating Profit = 3565.0 (diff 233.2%)"
+profitandloss,DQ-05,WARNING,SHRIRAMFIN,2021-03,operating_profit,3402.0,"Operating profit mismatch: Sales (17422) - Expenses (4932) = 12490, reported Operating Profit = 3402.0 (diff 267.1%)"
+profitandloss,DQ-05,WARNING,SHRIRAMFIN,2022-03,operating_profit,3666.0,"Operating profit mismatch: Sales (19255) - Expenses (5816) = 13439, reported Operating Profit = 3666.0 (diff 266.6%)"
+profitandloss,DQ-05,WARNING,SHRIRAMFIN,2023-03,operating_profit,8799.0,"Operating profit mismatch: Sales (30492) - Expenses (8706) = 21786, reported Operating Profit = 8799.0 (diff 147.6%)"
+profitandloss,DQ-05,WARNING,SHRIRAMFIN,2024-03,operating_profit,10523.0,"Operating profit mismatch: Sales (36388) - Expenses (10278) = 26110, reported Operating Profit = 10523.0 (diff 148.1%)"
+profitandloss,DQ-05,WARNING,SHRIRAMFIN,TTM,operating_profit,11416.0,"Operating profit mismatch: Sales (39864) - Expenses (11228) = 28636, reported Operating Profit = 11416.0 (diff 150.8%)"
+profitandloss,DQ-08,WARNING,TATAMOTORS,2019-03,tax_percentage,-8.0,Effective tax rate out of bounds: -8.0%
+profitandloss,DQ-08,WARNING,TATAMOTORS,2024-03,tax_percentage,-14.0,Effective tax rate out of bounds: -14.0%
+profitandloss,DQ-11,WARNING,TATAPOWER,2014-03,eps,-1.0,EPS sign (-1.0) does not match Net Profit sign (12)
+profitandloss,DQ-08,WARNING,TATASTEEL,2020-03,tax_percentage,-99.0,Effective tax rate out of bounds: -99.0%
+profitandloss,DQ-08,WARNING,TRENT,2021-03,tax_percentage,-12.0,Effective tax rate out of bounds: -12.0%
+profitandloss,DQ-03,CRITICAL,ULTRACEMCO,2013-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ULTRACEMCO,2014-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ULTRACEMCO,2015-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ULTRACEMCO,2016-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ULTRACEMCO,2017-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ULTRACEMCO,2018-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ULTRACEMCO,2019-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ULTRACEMCO,2020-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+profitandloss,DQ-08,WARNING,ULTRACEMCO,2020-03,tax_percentage,-11.0,Effective tax rate out of bounds: -11.0%
+profitandloss,DQ-03,CRITICAL,ULTRACEMCO,2021-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ULTRACEMCO,2022-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ULTRACEMCO,2023-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ULTRACEMCO,2024-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ULTRACEMCO,TTM,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,UNIONBANK,2013-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+profitandloss,DQ-05,WARNING,UNIONBANK,2013-03,operating_profit,325.0,"Operating profit mismatch: Sales (25169) - Expenses (7268) = 17901, reported Operating Profit = 325.0 (diff 5408.0%)"
+profitandloss,DQ-03,CRITICAL,UNIONBANK,2014-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+profitandloss,DQ-05,WARNING,UNIONBANK,2014-03,operating_profit,-902.0,"Operating profit mismatch: Sales (29394) - Expenses (8829) = 20565, reported Operating Profit = -902.0 (diff 2379.9%)"
+profitandloss,DQ-03,CRITICAL,UNIONBANK,2015-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+profitandloss,DQ-05,WARNING,UNIONBANK,2015-03,operating_profit,-973.0,"Operating profit mismatch: Sales (32164) - Expenses (9498) = 22666, reported Operating Profit = -973.0 (diff 2429.5%)"
+profitandloss,DQ-03,CRITICAL,UNIONBANK,2016-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+profitandloss,DQ-05,WARNING,UNIONBANK,2016-03,operating_profit,-1928.0,"Operating profit mismatch: Sales (32316) - Expenses (10349) = 21967, reported Operating Profit = -1928.0 (diff 1239.4%)"
+profitandloss,DQ-03,CRITICAL,UNIONBANK,2017-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+profitandloss,DQ-05,WARNING,UNIONBANK,2017-03,operating_profit,-4830.0,"Operating profit mismatch: Sales (32817) - Expenses (13871) = 18946, reported Operating Profit = -4830.0 (diff 492.3%)"
+profitandloss,DQ-08,WARNING,UNIONBANK,2017-03,tax_percentage,-58.0,Effective tax rate out of bounds: -58.0%
+profitandloss,DQ-03,CRITICAL,UNIONBANK,2018-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+profitandloss,DQ-05,WARNING,UNIONBANK,2018-03,operating_profit,-11700.0,"Operating profit mismatch: Sales (32952) - Expenses (21181) = 11771, reported Operating Profit = -11700.0 (diff 200.6%)"
+profitandloss,DQ-08,WARNING,UNIONBANK,2018-03,tax_percentage,-21.0,Effective tax rate out of bounds: -21.0%
+profitandloss,DQ-03,CRITICAL,UNIONBANK,2019-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+profitandloss,DQ-05,WARNING,UNIONBANK,2019-03,operating_profit,-8601.0,"Operating profit mismatch: Sales (34314) - Expenses (19019) = 15295, reported Operating Profit = -8601.0 (diff 277.8%)"
+profitandloss,DQ-08,WARNING,UNIONBANK,2019-03,tax_percentage,-25.0,Effective tax rate out of bounds: -25.0%
+profitandloss,DQ-03,CRITICAL,UNIONBANK,2020-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+profitandloss,DQ-05,WARNING,UNIONBANK,2020-03,operating_profit,-9523.0,"Operating profit mismatch: Sales (37479) - Expenses (21166) = 16313, reported Operating Profit = -9523.0 (diff 271.3%)"
+profitandloss,DQ-08,WARNING,UNIONBANK,2020-03,tax_percentage,-27.0,Effective tax rate out of bounds: -27.0%
+profitandloss,DQ-03,CRITICAL,UNIONBANK,2021-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+profitandloss,DQ-05,WARNING,UNIONBANK,2021-03,operating_profit,-11071.0,"Operating profit mismatch: Sales (69311) - Expenses (36270) = 33041, reported Operating Profit = -11071.0 (diff 398.4%)"
+profitandloss,DQ-08,WARNING,UNIONBANK,2021-03,tax_percentage,-22.0,Effective tax rate out of bounds: -22.0%
+profitandloss,DQ-03,CRITICAL,UNIONBANK,2022-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+profitandloss,DQ-05,WARNING,UNIONBANK,2022-03,operating_profit,-4213.0,"Operating profit mismatch: Sales (68230) - Expenses (32264) = 35966, reported Operating Profit = -4213.0 (diff 953.7%)"
+profitandloss,DQ-03,CRITICAL,UNIONBANK,2023-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+profitandloss,DQ-05,WARNING,UNIONBANK,2023-03,operating_profit,-3024.0,"Operating profit mismatch: Sales (81163) - Expenses (36155) = 45008, reported Operating Profit = -3024.0 (diff 1588.4%)"
+profitandloss,DQ-03,CRITICAL,UNIONBANK,2024-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+profitandloss,DQ-05,WARNING,UNIONBANK,2024-03,operating_profit,4590.0,"Operating profit mismatch: Sales (100376) - Expenses (32422) = 67954, reported Operating Profit = 4590.0 (diff 1380.5%)"
+profitandloss,DQ-03,CRITICAL,UNIONBANK,TTM,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+profitandloss,DQ-05,WARNING,UNIONBANK,TTM,operating_profit,2090.0,"Operating profit mismatch: Sales (107058) - Expenses (35514) = 71544, reported Operating Profit = 2090.0 (diff 3323.2%)"
+profitandloss,DQ-03,CRITICAL,UNITDSPR,2013-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+profitandloss,DQ-03,CRITICAL,UNITDSPR,2014-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+profitandloss,DQ-03,CRITICAL,UNITDSPR,2015-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+profitandloss,DQ-03,CRITICAL,UNITDSPR,2016-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+profitandloss,DQ-03,CRITICAL,UNITDSPR,2017-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+profitandloss,DQ-03,CRITICAL,UNITDSPR,2018-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+profitandloss,DQ-03,CRITICAL,UNITDSPR,2019-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+profitandloss,DQ-03,CRITICAL,UNITDSPR,2020-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+profitandloss,DQ-03,CRITICAL,UNITDSPR,2021-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+profitandloss,DQ-03,CRITICAL,UNITDSPR,2022-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+profitandloss,DQ-03,CRITICAL,UNITDSPR,2023-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+profitandloss,DQ-03,CRITICAL,UNITDSPR,2024-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+profitandloss,DQ-03,CRITICAL,UNITDSPR,TTM,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VBL,2012-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+profitandloss,DQ-08,WARNING,VBL,2012-12,tax_percentage,-20.0,Effective tax rate out of bounds: -20.0%
+profitandloss,DQ-03,CRITICAL,VBL,2013-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+profitandloss,DQ-08,WARNING,VBL,2013-12,tax_percentage,-11.0,Effective tax rate out of bounds: -11.0%
+profitandloss,DQ-03,CRITICAL,VBL,2014-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VBL,2015-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VBL,2016-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VBL,2017-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VBL,2018-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VBL,2019-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VBL,2020-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VBL,2021-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VBL,2022-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VBL,2023-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VBL,TTM,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VEDL,2013-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+profitandloss,DQ-08,WARNING,VEDL,2013-03,tax_percentage,-25.0,Effective tax rate out of bounds: -25.0%
+profitandloss,DQ-03,CRITICAL,VEDL,2014-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+profitandloss,DQ-08,WARNING,VEDL,2014-03,tax_percentage,-9.0,Effective tax rate out of bounds: -9.0%
+profitandloss,DQ-03,CRITICAL,VEDL,2015-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VEDL,2016-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+profitandloss,DQ-08,WARNING,VEDL,2016-03,tax_percentage,-37.0,Effective tax rate out of bounds: -37.0%
+profitandloss,DQ-03,CRITICAL,VEDL,2017-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VEDL,2018-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VEDL,2019-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VEDL,2020-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+profitandloss,DQ-08,WARNING,VEDL,2020-03,tax_percentage,-43.0,Effective tax rate out of bounds: -43.0%
+profitandloss,DQ-03,CRITICAL,VEDL,2021-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VEDL,2022-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VEDL,2023-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VEDL,2024-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,VEDL,TTM,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+profitandloss,DQ-03,CRITICAL,WIPRO,2013-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,WIPRO,2014-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,WIPRO,2015-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,WIPRO,2016-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,WIPRO,2017-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,WIPRO,2018-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,WIPRO,2019-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,WIPRO,2020-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,WIPRO,2021-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,WIPRO,2022-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,WIPRO,2023-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,WIPRO,2024-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,WIPRO,TTM,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZOMATO,2018-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZOMATO,2019-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZOMATO,2020-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZOMATO,2021-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZOMATO,2022-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZOMATO,2023-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+profitandloss,DQ-08,WARNING,ZOMATO,2023-03,tax_percentage,-4.0,Effective tax rate out of bounds: -4.0%
+profitandloss,DQ-03,CRITICAL,ZOMATO,2024-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+profitandloss,DQ-08,WARNING,ZOMATO,2024-03,tax_percentage,-21.0,Effective tax rate out of bounds: -21.0%
+profitandloss,DQ-03,CRITICAL,ZOMATO,TTM,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZYDUSLIFE,2013-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZYDUSLIFE,2014-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZYDUSLIFE,2015-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZYDUSLIFE,2016-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZYDUSLIFE,2017-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZYDUSLIFE,2018-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZYDUSLIFE,2019-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZYDUSLIFE,2020-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZYDUSLIFE,2021-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZYDUSLIFE,2022-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZYDUSLIFE,2023-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZYDUSLIFE,2024-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+profitandloss,DQ-03,CRITICAL,ZYDUSLIFE,TTM,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+profitandloss,DQ-05,WARNING,INDIGO,2013-03,operating_profit,8348.0,"Operating profit mismatch: Sales (9203) - Expenses (73) = 9130, reported Operating Profit = 8348.0 (diff 9.4%)"
+profitandloss,DQ-05,WARNING,INDIGO,2014-03,operating_profit,10684.0,"Operating profit mismatch: Sales (11117) - Expenses (123) = 10994, reported Operating Profit = 10684.0 (diff 2.9%)"
+profitandloss,DQ-05,WARNING,INDIGO,2015-03,operating_profit,12022.0,"Operating profit mismatch: Sales (13925) - Expenses (150) = 13775, reported Operating Profit = 12022.0 (diff 14.6%)"
+profitandloss,DQ-05,WARNING,INDIGO,2016-03,operating_profit,12976.0,"Operating profit mismatch: Sales (16140) - Expenses (350) = 15790, reported Operating Profit = 12976.0 (diff 21.7%)"
+profitandloss,DQ-05,WARNING,INDIGO,2017-03,operating_profit,16362.0,"Operating profit mismatch: Sales (18580) - Expenses (406) = 18174, reported Operating Profit = 16362.0 (diff 11.1%)"
+profitandloss,DQ-05,WARNING,INDIGO,2018-03,operating_profit,19991.0,"Operating profit mismatch: Sales (23021) - Expenses (413) = 22608, reported Operating Profit = 19991.0 (diff 13.1%)"
+profitandloss,DQ-05,WARNING,INDIGO,2019-03,operating_profit,28648.0,"Operating profit mismatch: Sales (28497) - Expenses (563) = 27934, reported Operating Profit = 28648.0 (diff 2.5%)"
+profitandloss,DQ-08,WARNING,INDIGO,2019-03,tax_percentage,-99.0,Effective tax rate out of bounds: -99.0%
+profitandloss,DQ-05,WARNING,INDIGO,2020-03,operating_profit,31687.0,"Operating profit mismatch: Sales (35756) - Expenses (1902) = 33854, reported Operating Profit = 31687.0 (diff 6.8%)"
+profitandloss,DQ-08,WARNING,INDIGO,2020-03,tax_percentage,-10.0,Effective tax rate out of bounds: -10.0%
+profitandloss,DQ-05,WARNING,INDIGO,2021-03,operating_profit,14638.0,"Operating profit mismatch: Sales (14641) - Expenses (2170) = 12471, reported Operating Profit = 14638.0 (diff 14.8%)"
+profitandloss,DQ-05,WARNING,INDIGO,2022-03,operating_profit,25373.0,"Operating profit mismatch: Sales (25931) - Expenses (2386) = 23545, reported Operating Profit = 25373.0 (diff 7.2%)"
+profitandloss,DQ-05,WARNING,INDIGO,2023-03,operating_profit,47926.0,"Operating profit mismatch: Sales (54446) - Expenses (3168) = 51278, reported Operating Profit = 47926.0 (diff 7.0%)"
+profitandloss,DQ-05,WARNING,INDIGO,2024-03,operating_profit,52573.0,"Operating profit mismatch: Sales (68904) - Expenses (4805) = 64099, reported Operating Profit = 52573.0 (diff 21.9%)"
+profitandloss,DQ-08,WARNING,INDIGO,2024-03,tax_percentage,-2.0,Effective tax rate out of bounds: -2.0%
+profitandloss,DQ-05,WARNING,INDIGO,TTM,operating_profit,60568.0,"Operating profit mismatch: Sales (76476) - Expenses (0) = 76476, reported Operating Profit = 60568.0 (diff 26.3%)"
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2013-03,"company_id,year","ASIANPAINT,2013-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2014-03,"company_id,year","ASIANPAINT,2014-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2015-03,"company_id,year","ASIANPAINT,2015-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2016-03,"company_id,year","ASIANPAINT,2016-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2017-03,"company_id,year","ASIANPAINT,2017-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2018-03,"company_id,year","ASIANPAINT,2018-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2019-03,"company_id,year","ASIANPAINT,2019-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2020-03,"company_id,year","ASIANPAINT,2020-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2021-03,"company_id,year","ASIANPAINT,2021-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2022-03,"company_id,year","ASIANPAINT,2022-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2023-03,"company_id,year","ASIANPAINT,2023-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2024-03,"company_id,year","ASIANPAINT,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2024-09,"company_id,year","ASIANPAINT,2024-09",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2013-03,"company_id,year","ASIANPAINT,2013-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2014-03,"company_id,year","ASIANPAINT,2014-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2015-03,"company_id,year","ASIANPAINT,2015-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2016-03,"company_id,year","ASIANPAINT,2016-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2017-03,"company_id,year","ASIANPAINT,2017-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2018-03,"company_id,year","ASIANPAINT,2018-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2019-03,"company_id,year","ASIANPAINT,2019-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2020-03,"company_id,year","ASIANPAINT,2020-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2021-03,"company_id,year","ASIANPAINT,2021-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2022-03,"company_id,year","ASIANPAINT,2022-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2023-03,"company_id,year","ASIANPAINT,2023-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2024-03,"company_id,year","ASIANPAINT,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ASIANPAINT,2024-09,"company_id,year","ASIANPAINT,2024-09",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2013-03,"company_id,year","PNB,2013-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2014-03,"company_id,year","PNB,2014-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2015-03,"company_id,year","PNB,2015-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2016-03,"company_id,year","PNB,2016-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2017-03,"company_id,year","PNB,2017-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2018-03,"company_id,year","PNB,2018-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2019-03,"company_id,year","PNB,2019-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2020-03,"company_id,year","PNB,2020-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2021-03,"company_id,year","PNB,2021-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2022-03,"company_id,year","PNB,2022-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2023-03,"company_id,year","PNB,2023-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2024-03,"company_id,year","PNB,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2013-03,"company_id,year","PNB,2013-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2014-03,"company_id,year","PNB,2014-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2015-03,"company_id,year","PNB,2015-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2016-03,"company_id,year","PNB,2016-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2017-03,"company_id,year","PNB,2017-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2018-03,"company_id,year","PNB,2018-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2019-03,"company_id,year","PNB,2019-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2020-03,"company_id,year","PNB,2020-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2021-03,"company_id,year","PNB,2021-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2022-03,"company_id,year","PNB,2022-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2023-03,"company_id,year","PNB,2023-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2024-03,"company_id,year","PNB,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2013-03,"company_id,year","PNB,2013-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2014-03,"company_id,year","PNB,2014-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2015-03,"company_id,year","PNB,2015-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2016-03,"company_id,year","PNB,2016-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2017-03,"company_id,year","PNB,2017-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2018-03,"company_id,year","PNB,2018-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2019-03,"company_id,year","PNB,2019-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2020-03,"company_id,year","PNB,2020-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2021-03,"company_id,year","PNB,2021-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2022-03,"company_id,year","PNB,2022-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2023-03,"company_id,year","PNB,2023-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2024-03,"company_id,year","PNB,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2013-03,"company_id,year","PNB,2013-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2014-03,"company_id,year","PNB,2014-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2015-03,"company_id,year","PNB,2015-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2016-03,"company_id,year","PNB,2016-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2017-03,"company_id,year","PNB,2017-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2018-03,"company_id,year","PNB,2018-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2019-03,"company_id,year","PNB,2019-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2020-03,"company_id,year","PNB,2020-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2021-03,"company_id,year","PNB,2021-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2022-03,"company_id,year","PNB,2022-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2023-03,"company_id,year","PNB,2023-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2024-03,"company_id,year","PNB,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2013-03,"company_id,year","PNB,2013-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2014-03,"company_id,year","PNB,2014-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2015-03,"company_id,year","PNB,2015-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2016-03,"company_id,year","PNB,2016-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2017-03,"company_id,year","PNB,2017-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2018-03,"company_id,year","PNB,2018-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2019-03,"company_id,year","PNB,2019-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2020-03,"company_id,year","PNB,2020-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2021-03,"company_id,year","PNB,2021-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2022-03,"company_id,year","PNB,2022-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2023-03,"company_id,year","PNB,2023-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,PNB,2024-03,"company_id,year","PNB,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2013-03,"company_id,year","POWERGRID,2013-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2014-03,"company_id,year","POWERGRID,2014-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2015-03,"company_id,year","POWERGRID,2015-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2016-03,"company_id,year","POWERGRID,2016-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2017-03,"company_id,year","POWERGRID,2017-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2018-03,"company_id,year","POWERGRID,2018-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2019-03,"company_id,year","POWERGRID,2019-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2020-03,"company_id,year","POWERGRID,2020-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2021-03,"company_id,year","POWERGRID,2021-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2022-03,"company_id,year","POWERGRID,2022-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2023-03,"company_id,year","POWERGRID,2023-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2024-03,"company_id,year","POWERGRID,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2024-09,"company_id,year","POWERGRID,2024-09",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2013-03,"company_id,year","POWERGRID,2013-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2014-03,"company_id,year","POWERGRID,2014-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2015-03,"company_id,year","POWERGRID,2015-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2016-03,"company_id,year","POWERGRID,2016-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2017-03,"company_id,year","POWERGRID,2017-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2018-03,"company_id,year","POWERGRID,2018-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2019-03,"company_id,year","POWERGRID,2019-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2020-03,"company_id,year","POWERGRID,2020-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2021-03,"company_id,year","POWERGRID,2021-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2022-03,"company_id,year","POWERGRID,2022-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2023-03,"company_id,year","POWERGRID,2023-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2024-03,"company_id,year","POWERGRID,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,POWERGRID,2024-09,"company_id,year","POWERGRID,2024-09",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ZYDUSLIFE,2024-03,"company_id,year","ZYDUSLIFE,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ZYDUSLIFE,2024-03,"company_id,year","ZYDUSLIFE,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ZOMATO,2024-03,"company_id,year","ZOMATO,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,ZOMATO,2024-03,"company_id,year","ZOMATO,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,WIPRO,2024-03,"company_id,year","WIPRO,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,WIPRO,2024-03,"company_id,year","WIPRO,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,VEDL,2024-03,"company_id,year","VEDL,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,VEDL,2024-03,"company_id,year","VEDL,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,UNITDSPR,2024-03,"company_id,year","UNITDSPR,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,UNITDSPR,2024-03,"company_id,year","UNITDSPR,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2013-03,"company_id,year","TECHM,2013-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2014-03,"company_id,year","TECHM,2014-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2015-03,"company_id,year","TECHM,2015-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2016-03,"company_id,year","TECHM,2016-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2017-03,"company_id,year","TECHM,2017-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2018-03,"company_id,year","TECHM,2018-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2019-03,"company_id,year","TECHM,2019-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2020-03,"company_id,year","TECHM,2020-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2021-03,"company_id,year","TECHM,2021-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2022-03,"company_id,year","TECHM,2022-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2023-03,"company_id,year","TECHM,2023-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2024-03,"company_id,year","TECHM,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2024-09,"company_id,year","TECHM,2024-09",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2013-03,"company_id,year","TECHM,2013-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2014-03,"company_id,year","TECHM,2014-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2015-03,"company_id,year","TECHM,2015-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2016-03,"company_id,year","TECHM,2016-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2017-03,"company_id,year","TECHM,2017-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2018-03,"company_id,year","TECHM,2018-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2019-03,"company_id,year","TECHM,2019-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2020-03,"company_id,year","TECHM,2020-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2021-03,"company_id,year","TECHM,2021-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2022-03,"company_id,year","TECHM,2022-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2023-03,"company_id,year","TECHM,2023-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2024-03,"company_id,year","TECHM,2024-03",Duplicate composite primary key
+balancesheet,DQ-02,CRITICAL,TECHM,2024-09,"company_id,year","TECHM,2024-09",Duplicate composite primary key
+balancesheet,DQ-03,CRITICAL,ZYDUSLIFE,2013-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZYDUSLIFE,2014-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZYDUSLIFE,2015-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZYDUSLIFE,2016-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZYDUSLIFE,2017-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZYDUSLIFE,2018-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZYDUSLIFE,2019-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZYDUSLIFE,2020-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZYDUSLIFE,2021-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZYDUSLIFE,2022-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZYDUSLIFE,2023-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZYDUSLIFE,2024-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZYDUSLIFE,2024-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZOMATO,2018-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZOMATO,2019-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZOMATO,2020-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZOMATO,2021-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZOMATO,2022-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZOMATO,2023-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZOMATO,2024-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ZOMATO,2024-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,WIPRO,2013-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,WIPRO,2014-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,WIPRO,2015-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,WIPRO,2016-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,WIPRO,2017-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,WIPRO,2018-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,WIPRO,2019-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,WIPRO,2020-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,WIPRO,2021-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,WIPRO,2022-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,WIPRO,2023-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,WIPRO,2024-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,WIPRO,2024-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,VEDL,2013-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+balancesheet,DQ-03,CRITICAL,VEDL,2014-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+balancesheet,DQ-03,CRITICAL,VEDL,2015-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+balancesheet,DQ-03,CRITICAL,VEDL,2016-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+balancesheet,DQ-03,CRITICAL,VEDL,2017-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+balancesheet,DQ-03,CRITICAL,VEDL,2018-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+balancesheet,DQ-03,CRITICAL,VEDL,2019-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+balancesheet,DQ-03,CRITICAL,VEDL,2020-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+balancesheet,DQ-03,CRITICAL,VEDL,2021-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+balancesheet,DQ-03,CRITICAL,VEDL,2022-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+balancesheet,DQ-03,CRITICAL,VEDL,2023-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+balancesheet,DQ-03,CRITICAL,VEDL,2024-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+balancesheet,DQ-03,CRITICAL,VEDL,2024-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNITDSPR,2013-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNITDSPR,2014-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNITDSPR,2015-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNITDSPR,2016-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNITDSPR,2017-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNITDSPR,2018-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNITDSPR,2019-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNITDSPR,2020-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNITDSPR,2021-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNITDSPR,2022-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNITDSPR,2023-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNITDSPR,2024-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNITDSPR,2024-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNIONBANK,2013-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNIONBANK,2014-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNIONBANK,2015-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNIONBANK,2016-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNIONBANK,2017-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNIONBANK,2018-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNIONBANK,2019-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNIONBANK,2020-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNIONBANK,2021-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNIONBANK,2022-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNIONBANK,2023-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+balancesheet,DQ-03,CRITICAL,UNIONBANK,2024-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ULTRACEMCO,2013-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ULTRACEMCO,2014-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ULTRACEMCO,2015-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ULTRACEMCO,2016-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ULTRACEMCO,2017-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ULTRACEMCO,2018-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ULTRACEMCO,2019-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ULTRACEMCO,2020-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ULTRACEMCO,2021-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ULTRACEMCO,2022-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ULTRACEMCO,2023-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ULTRACEMCO,2024-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+balancesheet,DQ-03,CRITICAL,ULTRACEMCO,2024-09,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+cashflow,DQ-02,CRITICAL,TCS,2013-03,"company_id,year","TCS,2013-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2014-03,"company_id,year","TCS,2014-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2015-03,"company_id,year","TCS,2015-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2016-03,"company_id,year","TCS,2016-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2017-03,"company_id,year","TCS,2017-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2018-03,"company_id,year","TCS,2018-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2019-03,"company_id,year","TCS,2019-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2020-03,"company_id,year","TCS,2020-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2021-03,"company_id,year","TCS,2021-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2022-03,"company_id,year","TCS,2022-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2023-03,"company_id,year","TCS,2023-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2024-03,"company_id,year","TCS,2024-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2014-03,"company_id,year","ABB,2014-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2015-03,"company_id,year","ABB,2015-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2016-03,"company_id,year","ABB,2016-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2017-03,"company_id,year","ABB,2017-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2018-03,"company_id,year","ABB,2018-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2019-03,"company_id,year","ABB,2019-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2020-03,"company_id,year","ABB,2020-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2021-03,"company_id,year","ABB,2021-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2022-03,"company_id,year","ABB,2022-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2023-03,"company_id,year","ABB,2023-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2024-03,"company_id,year","ABB,2024-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2014-03,"company_id,year","ABB,2014-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2015-03,"company_id,year","ABB,2015-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2016-03,"company_id,year","ABB,2016-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2017-03,"company_id,year","ABB,2017-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2018-03,"company_id,year","ABB,2018-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2019-03,"company_id,year","ABB,2019-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2020-03,"company_id,year","ABB,2020-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2021-03,"company_id,year","ABB,2021-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2022-03,"company_id,year","ABB,2022-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2023-03,"company_id,year","ABB,2023-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,ABB,2024-03,"company_id,year","ABB,2024-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2013-03,"company_id,year","BAJAJ-AUTO,2013-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2014-03,"company_id,year","BAJAJ-AUTO,2014-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2015-03,"company_id,year","BAJAJ-AUTO,2015-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2016-03,"company_id,year","BAJAJ-AUTO,2016-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2017-03,"company_id,year","BAJAJ-AUTO,2017-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2018-03,"company_id,year","BAJAJ-AUTO,2018-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2019-03,"company_id,year","BAJAJ-AUTO,2019-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2020-03,"company_id,year","BAJAJ-AUTO,2020-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2021-03,"company_id,year","BAJAJ-AUTO,2021-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2022-03,"company_id,year","BAJAJ-AUTO,2022-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2023-03,"company_id,year","BAJAJ-AUTO,2023-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2024-03,"company_id,year","BAJAJ-AUTO,2024-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2013-03,"company_id,year","BAJAJ-AUTO,2013-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2014-03,"company_id,year","BAJAJ-AUTO,2014-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2015-03,"company_id,year","BAJAJ-AUTO,2015-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2016-03,"company_id,year","BAJAJ-AUTO,2016-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2017-03,"company_id,year","BAJAJ-AUTO,2017-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2018-03,"company_id,year","BAJAJ-AUTO,2018-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2019-03,"company_id,year","BAJAJ-AUTO,2019-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2020-03,"company_id,year","BAJAJ-AUTO,2020-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2021-03,"company_id,year","BAJAJ-AUTO,2021-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2022-03,"company_id,year","BAJAJ-AUTO,2022-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2023-03,"company_id,year","BAJAJ-AUTO,2023-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,BAJAJ-AUTO,2024-03,"company_id,year","BAJAJ-AUTO,2024-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2013-03,"company_id,year","TCS,2013-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2014-03,"company_id,year","TCS,2014-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2015-03,"company_id,year","TCS,2015-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2016-03,"company_id,year","TCS,2016-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2017-03,"company_id,year","TCS,2017-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2018-03,"company_id,year","TCS,2018-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2019-03,"company_id,year","TCS,2019-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2020-03,"company_id,year","TCS,2020-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2021-03,"company_id,year","TCS,2021-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2022-03,"company_id,year","TCS,2022-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2023-03,"company_id,year","TCS,2023-03",Duplicate composite primary key
+cashflow,DQ-02,CRITICAL,TCS,2024-03,"company_id,year","TCS,2024-03",Duplicate composite primary key
+cashflow,DQ-03,CRITICAL,AGTL,2018-03,company_id,AGTL,Foreign Key violation: Company ID AGTL does not exist in companies table
+cashflow,DQ-03,CRITICAL,AGTL,2019-03,company_id,AGTL,Foreign Key violation: Company ID AGTL does not exist in companies table
+cashflow,DQ-03,CRITICAL,AGTL,2020-03,company_id,AGTL,Foreign Key violation: Company ID AGTL does not exist in companies table
+cashflow,DQ-03,CRITICAL,AGTL,2021-03,company_id,AGTL,Foreign Key violation: Company ID AGTL does not exist in companies table
+cashflow,DQ-03,CRITICAL,AGTL,2022-03,company_id,AGTL,Foreign Key violation: Company ID AGTL does not exist in companies table
+cashflow,DQ-03,CRITICAL,AGTL,2023-03,company_id,AGTL,Foreign Key violation: Company ID AGTL does not exist in companies table
+cashflow,DQ-03,CRITICAL,AGTL,2024-03,company_id,AGTL,Foreign Key violation: Company ID AGTL does not exist in companies table
+cashflow,DQ-07,WARNING,TVSMOTOR,2022-03,net_cash_flow,532.0,Net cash flow mismatch: Calculated (-128.0) vs Reported (532.0)
+cashflow,DQ-03,CRITICAL,ULTRACEMCO,2013-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ULTRACEMCO,2014-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ULTRACEMCO,2015-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ULTRACEMCO,2016-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ULTRACEMCO,2017-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ULTRACEMCO,2018-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ULTRACEMCO,2019-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ULTRACEMCO,2020-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ULTRACEMCO,2021-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ULTRACEMCO,2022-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ULTRACEMCO,2023-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ULTRACEMCO,2024-03,company_id,ULTRACEMCO,Foreign Key violation: Company ID ULTRACEMCO does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNIONBANK,2013-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNIONBANK,2014-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNIONBANK,2015-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNIONBANK,2016-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNIONBANK,2017-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNIONBANK,2018-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNIONBANK,2019-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNIONBANK,2020-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNIONBANK,2021-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNIONBANK,2022-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNIONBANK,2023-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNIONBANK,2024-03,company_id,UNIONBANK,Foreign Key violation: Company ID UNIONBANK does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNITDSPR,2013-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNITDSPR,2014-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNITDSPR,2015-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNITDSPR,2016-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNITDSPR,2017-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNITDSPR,2018-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNITDSPR,2019-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNITDSPR,2020-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNITDSPR,2021-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNITDSPR,2022-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNITDSPR,2023-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+cashflow,DQ-03,CRITICAL,UNITDSPR,2024-03,company_id,UNITDSPR,Foreign Key violation: Company ID UNITDSPR does not exist in companies table
+cashflow,DQ-03,CRITICAL,VBL,2012-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VBL,2013-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VBL,2014-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VBL,2015-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VBL,2016-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VBL,2017-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VBL,2018-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VBL,2019-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VBL,2020-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VBL,2021-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VBL,2022-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VBL,2023-12,company_id,VBL,Foreign Key violation: Company ID VBL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VEDL,2013-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VEDL,2014-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VEDL,2015-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VEDL,2016-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VEDL,2017-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VEDL,2018-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VEDL,2019-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VEDL,2020-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VEDL,2021-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VEDL,2022-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VEDL,2023-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+cashflow,DQ-03,CRITICAL,VEDL,2024-03,company_id,VEDL,Foreign Key violation: Company ID VEDL does not exist in companies table
+cashflow,DQ-03,CRITICAL,WIPRO,2013-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+cashflow,DQ-03,CRITICAL,WIPRO,2014-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+cashflow,DQ-03,CRITICAL,WIPRO,2015-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+cashflow,DQ-03,CRITICAL,WIPRO,2016-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+cashflow,DQ-03,CRITICAL,WIPRO,2017-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+cashflow,DQ-03,CRITICAL,WIPRO,2018-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+cashflow,DQ-03,CRITICAL,WIPRO,2019-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+cashflow,DQ-03,CRITICAL,WIPRO,2020-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+cashflow,DQ-03,CRITICAL,WIPRO,2021-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+cashflow,DQ-03,CRITICAL,WIPRO,2022-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+cashflow,DQ-03,CRITICAL,WIPRO,2023-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+cashflow,DQ-03,CRITICAL,WIPRO,2024-03,company_id,WIPRO,Foreign Key violation: Company ID WIPRO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZOMATO,2020-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZOMATO,2021-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZOMATO,2022-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZOMATO,2023-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZOMATO,2024-03,company_id,ZOMATO,Foreign Key violation: Company ID ZOMATO does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZYDUSLIFE,2013-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZYDUSLIFE,2014-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZYDUSLIFE,2015-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZYDUSLIFE,2016-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZYDUSLIFE,2017-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZYDUSLIFE,2018-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZYDUSLIFE,2019-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZYDUSLIFE,2020-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZYDUSLIFE,2021-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZYDUSLIFE,2022-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZYDUSLIFE,2023-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+cashflow,DQ-03,CRITICAL,ZYDUSLIFE,2024-03,company_id,ZYDUSLIFE,Foreign Key violation: Company ID ZYDUSLIFE does not exist in companies table
+financial_ratios,DQ-16,WARNING,ADANIGREEN,2022-03,debt_to_equity,20.2112,Outlier detected: Debt-to-Equity ratio is exceptionally high: 20.2112
+financial_ratios,DQ-16,WARNING,ADANIPOWER,2017-03,debt_to_equity,17.4947,Outlier detected: Debt-to-Equity ratio is exceptionally high: 17.4947
+financial_ratios,DQ-16,WARNING,ADANIPOWER,2018-03,debt_to_equity,59.4319,Outlier detected: Debt-to-Equity ratio is exceptionally high: 59.4319
+financial_ratios,DQ-16,WARNING,BANKBARODA,2013-03,debt_to_equity,15.2993,Outlier detected: Debt-to-Equity ratio is exceptionally high: 15.2993
+financial_ratios,DQ-16,WARNING,BANKBARODA,2014-03,debt_to_equity,16.3018,Outlier detected: Debt-to-Equity ratio is exceptionally high: 16.3018
+financial_ratios,DQ-16,WARNING,BANKBARODA,2015-03,debt_to_equity,15.838,Outlier detected: Debt-to-Equity ratio is exceptionally high: 15.838
+financial_ratios,DQ-16,WARNING,BANKBARODA,2017-03,debt_to_equity,15.0579,Outlier detected: Debt-to-Equity ratio is exceptionally high: 15.0579
+financial_ratios,DQ-16,WARNING,CANBK,2015-03,debt_to_equity,15.3726,Outlier detected: Debt-to-Equity ratio is exceptionally high: 15.3726
+financial_ratios,DQ-16,WARNING,CANBK,2016-03,debt_to_equity,15.6344,Outlier detected: Debt-to-Equity ratio is exceptionally high: 15.6344
+financial_ratios,DQ-16,WARNING,CANBK,2017-03,debt_to_equity,15.4204,Outlier detected: Debt-to-Equity ratio is exceptionally high: 15.4204
+financial_ratios,DQ-16,WARNING,CANBK,2018-03,debt_to_equity,15.2792,Outlier detected: Debt-to-Equity ratio is exceptionally high: 15.2792
+financial_ratios,DQ-16,WARNING,CANBK,2019-03,debt_to_equity,16.9855,Outlier detected: Debt-to-Equity ratio is exceptionally high: 16.9855
+financial_ratios,DQ-16,WARNING,CANBK,2020-03,debt_to_equity,16.2154,Outlier detected: Debt-to-Equity ratio is exceptionally high: 16.2154
+financial_ratios,DQ-16,WARNING,CANBK,2021-03,debt_to_equity,17.0004,Outlier detected: Debt-to-Equity ratio is exceptionally high: 17.0004
+financial_ratios,DQ-16,WARNING,CANBK,2022-03,debt_to_equity,16.1894,Outlier detected: Debt-to-Equity ratio is exceptionally high: 16.1894
+financial_ratios,DQ-16,WARNING,CANBK,2023-03,debt_to_equity,15.8501,Outlier detected: Debt-to-Equity ratio is exceptionally high: 15.8501
+financial_ratios,DQ-16,WARNING,LICI,2019-03,debt_to_equity,332.5938,Outlier detected: Debt-to-Equity ratio is exceptionally high: 332.5938
+financial_ratios,DQ-16,WARNING,LICI,2020-03,debt_to_equity,252.9082,Outlier detected: Debt-to-Equity ratio is exceptionally high: 252.9082
+financial_ratios,DQ-16,WARNING,UNIONBANK,2013-03,debt_to_equity,16.6054,Outlier detected: Debt-to-Equity ratio is exceptionally high: 16.6054
+financial_ratios,DQ-16,WARNING,UNIONBANK,2014-03,debt_to_equity,17.5528,Outlier detected: Debt-to-Equity ratio is exceptionally high: 17.5528
+financial_ratios,DQ-16,WARNING,UNIONBANK,2015-03,debt_to_equity,17.7204,Outlier detected: Debt-to-Equity ratio is exceptionally high: 17.7204
+financial_ratios,DQ-16,WARNING,UNIONBANK,2016-03,debt_to_equity,16.2597,Outlier detected: Debt-to-Equity ratio is exceptionally high: 16.2597
+financial_ratios,DQ-16,WARNING,UNIONBANK,2017-03,debt_to_equity,17.3669,Outlier detected: Debt-to-Equity ratio is exceptionally high: 17.3669
+financial_ratios,DQ-16,WARNING,UNIONBANK,2018-03,debt_to_equity,18.0567,Outlier detected: Debt-to-Equity ratio is exceptionally high: 18.0567
+financial_ratios,DQ-16,WARNING,UNIONBANK,2019-03,debt_to_equity,17.1702,Outlier detected: Debt-to-Equity ratio is exceptionally high: 17.1702
+financial_ratios,DQ-16,WARNING,UNIONBANK,2021-03,debt_to_equity,15.1005,Outlier detected: Debt-to-Equity ratio is exceptionally high: 15.1005
+financial_ratios,DQ-16,WARNING,UNIONBANK,2022-03,debt_to_equity,15.3203,Outlier detected: Debt-to-Equity ratio is exceptionally high: 15.3203

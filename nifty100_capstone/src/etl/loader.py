@@ -38,7 +38,7 @@ print("=" * 60)
 print("  Nifty100 — Sprint 1 Data Foundation Loader")
 print("=" * 60)
 
-# Check raw files existence
+# Check raw files existence (12 files)
 REQUIRED_FILES = {
     "sectors":            "sectors.xlsx",
     "companies":          "companies.xlsx",
@@ -50,8 +50,8 @@ REQUIRED_FILES = {
     "stock_prices":       "stock_prices.csv",
     "prosandcons":        "prosandcons.xlsx",
     "documents":          "documents.xlsx",
-    "analysis_metrics":   "analysis_metrics.xlsx",
-    "additional_details": "additional_details.xlsx"
+    "analysis":           "analysis.xlsx",
+    "market_cap":         "market_cap.xlsx"
 }
 
 def check_files():
@@ -82,7 +82,7 @@ def load_all():
     dq = DataQualityValidator()
     load_audit = []
     
-    # Let's load the dataframes
+    # Load raw dataframes
     print("\n  Reading and cleaning data...")
     df_sec = pd.read_excel(RAW_DIR / "sectors.xlsx")
     df_comp = pd.read_excel(RAW_DIR / "companies.xlsx")
@@ -93,32 +93,57 @@ def load_all():
     df_ratios = pd.read_excel(RAW_DIR / "financial_ratios.xlsx")
     df_prices = pd.read_csv(RAW_DIR / "stock_prices.csv")
     df_procons = pd.read_excel(RAW_DIR / "prosandcons.xlsx")
+    
+    # documents.xlsx might be empty (0 rows/cols), check shape
     df_docs = pd.read_excel(RAW_DIR / "documents.xlsx")
-    df_analysis = pd.read_excel(RAW_DIR / "analysis_metrics.xlsx")
+    if df_docs.empty or df_docs.shape[1] == 0:
+        df_docs = pd.DataFrame(columns=["company_id", "year", "annual_report"])
+        
+    df_analysis = pd.read_excel(RAW_DIR / "analysis.xlsx")
+    df_mcap = pd.read_excel(RAW_DIR / "market_cap.xlsx")
     
     # Apply normalisers
     print("  Normalizing year and ticker columns...")
     
-    # Clean ticker in companies
-    df_comp["ticker"] = df_comp["ticker"].apply(normalize_ticker)
+    # Tickers to clean
+    df_comp["id"] = df_comp["id"].apply(normalize_ticker)
+    df_sec["company_id"] = df_sec["company_id"].apply(normalize_ticker)
+    df_pl["company_id"] = df_pl["company_id"].apply(normalize_ticker)
+    df_bs["company_id"] = df_bs["company_id"].apply(normalize_ticker)
+    df_cf["company_id"] = df_cf["company_id"].apply(normalize_ticker)
+    df_peers["company_id"] = df_peers["company_id"].apply(normalize_ticker)
+    df_ratios["company_id"] = df_ratios["company_id"].apply(normalize_ticker)
+    df_prices["company_id"] = df_prices["company_id"].apply(normalize_ticker)
+    df_procons["company_id"] = df_procons["company_id"].apply(normalize_ticker)
+    df_docs["company_id"] = df_docs["company_id"].apply(normalize_ticker)
+    df_analysis["company_id"] = df_analysis["company_id"].apply(normalize_ticker)
+    df_mcap["company_id"] = df_mcap["company_id"].apply(normalize_ticker)
     
-    # Clean year in financial tables
-    for df in [df_pl, df_bs, df_cf, df_ratios, df_analysis]:
+    # Financial years to clean
+    for df in [df_pl, df_bs, df_cf, df_ratios, df_mcap]:
         df["year"] = df["year"].apply(normalize_year)
         
     # Standardise date format in stock prices
-    df_prices["price_date"] = pd.to_datetime(df_prices["price_date"]).dt.strftime("%Y-%m-%d")
+    df_prices["date"] = pd.to_datetime(df_prices["date"]).dt.strftime("%Y-%m-%d")
 
     # Run Data Quality checks
     print("\n  Executing Data Quality validation checks...")
     
-    valid_company_ids = set(df_comp["company_id"].dropna().astype(int))
+    valid_company_ids = set(df_comp["id"].dropna().astype(str))
     
     dq.validate_companies(df_comp)
     dq.validate_profit_and_loss(df_pl, valid_company_ids)
     dq.validate_balancesheet(df_bs, valid_company_ids)
     dq.validate_cashflow(df_cf, valid_company_ids)
     dq.validate_ratios(df_ratios, valid_company_ids)
+    
+    # Deduplicate dataframes keeping last occurrence (satisfying DQ-02)
+    print("  Deduplicating composite key records (keeping last)...")
+    df_pl = df_pl.drop_duplicates(subset=["company_id", "year"], keep="last")
+    df_bs = df_bs.drop_duplicates(subset=["company_id", "year"], keep="last")
+    df_cf = df_cf.drop_duplicates(subset=["company_id", "year"], keep="last")
+    df_ratios = df_ratios.drop_duplicates(subset=["company_id", "year"], keep="last")
+    df_mcap = df_mcap.drop_duplicates(subset=["company_id", "year"], keep="last")
     
     # Save DQ failure logs
     dq.save_failures(OUTPUT_DIR / "validation_failures.csv")
@@ -127,9 +152,6 @@ def load_all():
     critical_failures = [f for f in dq.failures if f["severity"] == "CRITICAL"]
     if critical_failures:
         print(f"⚠️ Warning: Found {len(critical_failures)} CRITICAL failures.")
-        # Under strict DoD rules, we resolve critical failures. 
-        # For loading, we drop invalid rows if any critical violation exists.
-        # But our synthetic data generator is clean, so there should be 0 critical violations.
         print("  Proceeding to load data...")
     else:
         print("  0 CRITICAL rejections found. Validation successful.")
@@ -138,52 +160,79 @@ def load_all():
     print("\n  Loading clean data to database...")
     with sqlite3.connect(DB_PATH) as conn:
         conn.execute("PRAGMA foreign_keys = ON;")
+         # Load tables in correct dependency order
         
-        # Load tables in correct dependency order
-        
-        # 1. sectors
-        df_sec.to_sql("sectors", conn, if_exists="append", index=False)
-        load_audit.append({"table_name": "sectors", "loaded_rows": len(df_sec), "rejected_rows": 0})
-        
-        # 2. companies
+        # 1. companies
         df_comp.to_sql("companies", conn, if_exists="append", index=False)
         load_audit.append({"table_name": "companies", "loaded_rows": len(df_comp), "rejected_rows": 0})
         
+        # 2. sectors
+        # Align column names for database mapping
+        df_sec_db = df_sec[['company_id', 'broad_sector', 'sub_sector', 'index_weight_pct', 'market_cap_category']].drop(columns=["id"], errors="ignore")
+        df_sec_db = df_sec_db[df_sec_db["company_id"].isin(valid_company_ids)]
+        df_sec_db.to_sql("sectors", conn, if_exists="append", index=False)
+        load_audit.append({"table_name": "sectors", "loaded_rows": len(df_sec_db), "rejected_rows": 0})
+        
         # 3. documents
-        df_docs.to_sql("documents", conn, if_exists="append", index=False)
-        load_audit.append({"table_name": "documents", "loaded_rows": len(df_docs), "rejected_rows": 0})
+        df_docs_db = df_docs.rename(columns={"Year": "year", "Annual_Report": "annual_report"}).drop(columns=["id"], errors="ignore")
+        df_docs_db = df_docs_db[df_docs_db["company_id"].isin(valid_company_ids)]
+        df_docs_db.to_sql("documents", conn, if_exists="append", index=False)
+        load_audit.append({"table_name": "documents", "loaded_rows": len(df_docs_db), "rejected_rows": 0})
         
         # 4. profitandloss
-        df_pl.to_sql("profitandloss", conn, if_exists="append", index=False)
-        load_audit.append({"table_name": "profitandloss", "loaded_rows": len(df_pl), "rejected_rows": 0})
+        df_pl_db = df_pl.drop(columns=["id"], errors="ignore")
+        df_pl_db = df_pl_db[df_pl_db["company_id"].isin(valid_company_ids)]
+        df_pl_db.to_sql("profitandloss", conn, if_exists="append", index=False)
+        load_audit.append({"table_name": "profitandloss", "loaded_rows": len(df_pl_db), "rejected_rows": 0})
         
         # 5. balancesheet
-        df_bs.to_sql("balancesheet", conn, if_exists="append", index=False)
-        load_audit.append({"table_name": "balancesheet", "loaded_rows": len(df_bs), "rejected_rows": 0})
+        df_bs_db = df_bs.drop(columns=["id"], errors="ignore")
+        df_bs_db = df_bs_db[df_bs_db["company_id"].isin(valid_company_ids)]
+        df_bs_db.to_sql("balancesheet", conn, if_exists="append", index=False)
+        load_audit.append({"table_name": "balancesheet", "loaded_rows": len(df_bs_db), "rejected_rows": 0})
         
         # 6. cashflow
-        df_cf.to_sql("cashflow", conn, if_exists="append", index=False)
-        load_audit.append({"table_name": "cashflow", "loaded_rows": len(df_cf), "rejected_rows": 0})
+        df_cf_db = df_cf.drop(columns=["id"], errors="ignore")
+        df_cf_db = df_cf_db[df_cf_db["company_id"].isin(valid_company_ids)]
+        df_cf_db.to_sql("cashflow", conn, if_exists="append", index=False)
+        load_audit.append({"table_name": "cashflow", "loaded_rows": len(df_cf_db), "rejected_rows": 0})
         
         # 7. financial_ratios
-        df_ratios.to_sql("financial_ratios", conn, if_exists="append", index=False)
-        load_audit.append({"table_name": "financial_ratios", "loaded_rows": len(df_ratios), "rejected_rows": 0})
+        df_ratios_db = df_ratios.drop(columns=["id"], errors="ignore")
+        df_ratios_db = df_ratios_db[df_ratios_db["company_id"].isin(valid_company_ids)]
+        df_ratios_db.to_sql("financial_ratios", conn, if_exists="append", index=False)
+        load_audit.append({"table_name": "financial_ratios", "loaded_rows": len(df_ratios_db), "rejected_rows": 0})
         
         # 8. analysis
-        df_analysis.to_sql("analysis", conn, if_exists="append", index=False)
-        load_audit.append({"table_name": "analysis", "loaded_rows": len(df_analysis), "rejected_rows": 0})
+        df_analysis_db = df_analysis.copy()
+        df_analysis_db = df_analysis_db[df_analysis_db["company_id"].isin(valid_company_ids)]
+        df_analysis_db.to_sql("analysis", conn, if_exists="append", index=False)
+        load_audit.append({"table_name": "analysis", "loaded_rows": len(df_analysis_db), "rejected_rows": 0})
         
         # 9. prosandcons
-        df_procons.to_sql("prosandcons", conn, if_exists="append", index=False)
-        load_audit.append({"table_name": "prosandcons", "loaded_rows": len(df_procons), "rejected_rows": 0})
+        # clean the columns to map 'pros' and 'cons' properly
+        df_procons_db = df_procons[['id', 'company_id', 'pros', 'cons']].copy()
+        df_procons_db = df_procons_db[df_procons_db["company_id"].isin(valid_company_ids)]
+        df_procons_db.to_sql("prosandcons", conn, if_exists="append", index=False)
+        load_audit.append({"table_name": "prosandcons", "loaded_rows": len(df_procons_db), "rejected_rows": 0})
         
-        # 10. peer_groups
-        df_peers.to_sql("peer_groups", conn, if_exists="append", index=False)
-        load_audit.append({"table_name": "peer_groups", "loaded_rows": len(df_peers), "rejected_rows": 0})
+        # 10. market_cap
+        df_mcap_db = df_mcap.drop(columns=["id"], errors="ignore")
+        df_mcap_db = df_mcap_db[df_mcap_db["company_id"].isin(valid_company_ids)]
+        df_mcap_db.to_sql("market_cap", conn, if_exists="append", index=False)
+        load_audit.append({"table_name": "market_cap", "loaded_rows": len(df_mcap_db), "rejected_rows": 0})
         
-        # 11. stock_prices
-        df_prices.to_sql("stock_prices", conn, if_exists="append", index=False)
-        load_audit.append({"table_name": "stock_prices", "loaded_rows": len(df_prices), "rejected_rows": 0})
+        # 11. peer_groups
+        df_peers_db = df_peers[['peer_group_name', 'company_id', 'is_benchmark']].drop(columns=["id"], errors="ignore")
+        df_peers_db = df_peers_db[df_peers_db["company_id"].isin(valid_company_ids) & df_peers_db["company_id"].isin(valid_company_ids)]
+        df_peers_db.to_sql("peer_groups", conn, if_exists="append", index=False)
+        load_audit.append({"table_name": "peer_groups", "loaded_rows": len(df_peers_db), "rejected_rows": 0})
+        
+        # 12. stock_prices
+        df_prices_db = df_prices.rename(columns={"date": "price_date"}).drop(columns=["id"], errors="ignore")
+        df_prices_db = df_prices_db[df_prices_db["company_id"].isin(valid_company_ids)]
+        df_prices_db.to_sql("stock_prices", conn, if_exists="append", index=False)
+        load_audit.append({"table_name": "stock_prices", "loaded_rows": len(df_prices_db), "rejected_rows": 0})
 
         # Run Foreign Key Check
         print("\n  Running SQLite PRAGMA foreign_key_check...")
