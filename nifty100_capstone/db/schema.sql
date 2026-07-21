@@ -218,3 +218,16 @@ CREATE INDEX idx_stock_prices ON stock_prices(company_id, price_date);
 CREATE INDEX idx_pl_year ON profitandloss(company_id, year);
 CREATE INDEX idx_bs_year ON balancesheet(company_id, year);
 CREATE INDEX idx_cf_year ON cashflow(company_id, year);
+
+-- 13. Peer Percentile Rankings (Sprint 3)
+CREATE TABLE IF NOT EXISTS peer_percentiles (
+    company_id TEXT NOT NULL,
+    peer_group_name TEXT NOT NULL,
+    metric TEXT NOT NULL,
+    value REAL,
+    percentile_rank REAL,
+    year TEXT NOT NULL,
+    PRIMARY KEY(company_id, peer_group_name, metric, year),
+    FOREIGN KEY(company_id) REFERENCES companies(id) ON DELETE CASCADE
+);
+CREATE INDEX IF NOT EXISTS idx_peer_pct ON peer_percentiles(peer_group_name, metric, year);
